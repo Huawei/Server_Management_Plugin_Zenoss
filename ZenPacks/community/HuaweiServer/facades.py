@@ -336,14 +336,30 @@ class HMMFacade(ZuulFacade):
         '''
         libexec = os.path.join(os.path.dirname(__file__), 'libexec')
         predefinedcmd = []
-        if arg2 == "-v2c":
-            predefinedcmd = [
-                libexec + '/hmmbladefrucontrol.sh', arg1, arg2,
-                arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
+        # 2018-01-12 add power on and off oid
+        valarg = int(arg10)
+        if valarg >= 100:
+            if valarg == 100:
+                arg10 = "poweron"
+            if valarg == 101:
+                arg10 = "poweroff"
+            if arg2 == "-v2c":
+                predefinedcmd = [
+                    libexec + '/hmmbladefruonoff.sh', arg1, arg2,
+                    arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
+            else:
+                predefinedcmd = [
+                    libexec + '/hmmbladefruonoff.sh', arg1, arg2,
+                    arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
         else:
-            predefinedcmd = [
-                libexec + '/hmmbladefrucontrol.sh', arg1, arg2,
-                arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
+            if arg2 == "-v2c":
+                predefinedcmd = [
+                    libexec + '/hmmbladefrucontrol.sh', arg1, arg2,
+                    arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
+            else:
+                predefinedcmd = [
+                    libexec + '/hmmbladefrucontrol.sh', arg1, arg2,
+                    arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10]
         result = executeCommand(predefinedcmd, None, None)
         log.info("executeCommand result %s ", result)
         return result
@@ -371,7 +387,7 @@ class HMMFacade(ZuulFacade):
 
         if not hmmfrucontrol.isdigit():
             return 'option not in range'
-        if int(hmmfrucontrol) > 10:
+        if int(hmmfrucontrol) > 1000:
             return 'option not in range'
 
         bladelist = []

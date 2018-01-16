@@ -6,7 +6,7 @@ I. General Information
 
     Name:     Management Plugin Pack for Huawei Device
     Category: Monitoring
-    Version:  2.0.12
+    Version:  2.0.15
 
 
 II. Description
