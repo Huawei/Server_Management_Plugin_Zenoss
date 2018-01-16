@@ -20,6 +20,7 @@
                 text: _t('Configure FRU Power'),
                 handler: function () {
                     console.log('Configure FRU Power!');
+
                     var win = new Zenoss.dialog.CloseDialog({
                         width: 300,
                         title: _t('Modify Configuration'),
@@ -64,6 +65,14 @@
                                     var form = b.ownerCt.ownerCt.getForm();
                                     var opts = form.getFieldValues();
 
+            new Zenoss.dialog.SimpleMessageDialog({
+                message: _t("Are you sure you want to perform this operation?"),
+                title: _t('Confirm'),
+                buttons: [{
+                    xtype: 'DialogButton',
+                    text: _t('Yes'),
+                    handler: function() {
+
                                     //  Following line must match the class defined in routers.py
                                     //    and the last part must match the method defined on that class
                                     //    ie. router class = bmcRouter, method = myRouterFunc
@@ -92,11 +101,20 @@
                                                 }).show();
                                             }
                                         });
+
+                    }
+                }, {
+                    xtype: 'DialogButton',
+                    text: _t('No')
+                }]
+            }).show();
+                                        
                                 }
                             }, Zenoss.dialog.CANCEL]
                         }]
                     });
                     win.show();
+
                 }
             }, {
                     xtype: 'menuitem',
@@ -160,6 +178,13 @@
                                         var form = b.ownerCt.ownerCt.getForm();
                                         var opts = form.getFieldValues();
 
+            new Zenoss.dialog.SimpleMessageDialog({
+                message: _t("Are you sure you want to perform this operation?"),
+                title: _t('Confirm'),
+                buttons: [{
+                    xtype: 'DialogButton',
+                    text: _t('Yes'),
+                    handler: function() {
                                         //  Following line must match the class defined in routers.py
                                         //    and the last part must match the method defined on that class
                                         //    ie. router class = BMCRouter, method = myRouterFunc
@@ -188,6 +213,14 @@
                                                     }).show();
                                                 }
                                             });
+                                            
+                    }
+                }, {
+                    xtype: 'DialogButton',
+                    text: _t('No')
+                }]
+            }).show();
+                                            
                                     }
                                 }, Zenoss.dialog.CANCEL]
                             }]
@@ -267,6 +300,13 @@
                                         var form = b.ownerCt.ownerCt.getForm();
                                         var opts = form.getFieldValues();
 
+            new Zenoss.dialog.SimpleMessageDialog({
+                message: _t("Are you sure you want to perform this operation?"),
+                title: _t('Confirm'),
+                buttons: [{
+                    xtype: 'DialogButton',
+                    text: _t('Yes'),
+                    handler: function() {
                                         Zenoss.remote.hmmRouter.routerbbo(opts,
                                             function (response) {
                                                 if (response.success) {
@@ -289,6 +329,13 @@
                                                     }).show();
                                                 }
                                             });
+
+                    }
+                }, {
+                    xtype: 'DialogButton',
+                    text: _t('No')
+                }]
+            }).show();
                                     }
                                 }, Zenoss.dialog.CANCEL]
                             }]
@@ -334,8 +381,8 @@
                                         name: 'hmmfrucontrol',
                                         fieldLabel: _t('FRU Control'),
                                         id: "exampleDeviceFRUControl",
-                                        store: [ [ 0, 'Force System Reset' ], [ 2, 'Force Power Cycle' ]
-                                        ,[3, 'NMI'] ],
+                                        store: [ [100, 'Power On'], [101, 'Normal Power Off'], [ 0, 'Force System Reset' ], [ 2, 'Force Power Cycle' ]
+                                        ,[3, 'NMI']],
                                         value: 0,
                                         forceSelection: true,
                                         editable: false,
@@ -351,6 +398,13 @@
                                         var form = b.ownerCt.ownerCt.getForm();
                                         var opts = form.getFieldValues();
 
+            new Zenoss.dialog.SimpleMessageDialog({
+                message: _t("Are you sure you want to perform this operation?"),
+                title: _t('Confirm'),
+                buttons: [{
+                    xtype: 'DialogButton',
+                    text: _t('Yes'),
+                    handler: function() {
                                         //  Following line must match the class defined in routers.py
                                         //    and the last part must match the method defined on that class
                                         //    ie. router class = bmcRouter, method = myRouterFunc
@@ -379,6 +433,13 @@
                                                     }).show();
                                                 }
                                             });
+
+                    }
+                }, {
+                    xtype: 'DialogButton',
+                    text: _t('No')
+                }]
+            }).show();
                                     }
                                 }, Zenoss.dialog.CANCEL]
                             }]

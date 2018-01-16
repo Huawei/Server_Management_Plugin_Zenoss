@@ -94,9 +94,11 @@ class HMMPowerSupplyMap(SnmpPlugin):
 
             psustatus = ''
             psulocation = ''
-            if (int(name)) in psumap:
-                psulocation = psumap[int(name)][0]
-                psustatus = psumap[int(name)][1]
+            # 2018-01-12 djg fixed psu[1... and powersuperly[0... in same row.
+            psuidx = int(name)+1
+            if (psuidx) in psumap:
+                psulocation = psumap[psuidx][0]
+                psustatus = psumap[psuidx][1]
 
             relmap.append(self.objectMap({
                 'id': self.prepId('PS_'+name),
