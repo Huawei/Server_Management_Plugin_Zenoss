@@ -13,7 +13,7 @@ I. General Information
 
 II. Description
 
-    The Zenoss Plugin is a plug-in for monitoring Huawei Server
+    The Zenoss Plugin is a plug-in for monitoring Huawei Server
 	
 III. Supported Software Version
 
