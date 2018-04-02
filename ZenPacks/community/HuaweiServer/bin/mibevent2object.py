@@ -43,6 +43,9 @@ def changemibevent(objarray, descarray, sevarray,
         if '1.3.6.1.4.1.2011.2.82.1.82.500.10' in oidstr:
             node.set('id', node.get('id')+'HMM')
             print node.get('id'), oidstr
+        if '1.3.6.1.4.1.2011.2.82.1.82.501.10' in oidstr:
+            node.set('id', node.get('id')+'HMM')
+            print node.get('id'), oidstr
 
 def makedeviceevenmap(objarray, descarray, sevarray,
                       oidarray, tree, nodes, devicetype):
@@ -81,13 +84,30 @@ def addeventmapnode(tree, eventclassnodes, eventclasskey, desc, oid, sev, device
     add device event node
     '''
     padlinebreak = '\n'
-    property1 = create_node(
-        "property", {"type": "text", "id": "transform", "mode": "w"},
-        'evt.summary = getattr(evt, "' + oid + '",'
-        ' "' +
-        desc + '");evt.severity=' + sev + ";" +
-        "evt.component=getattr(evt,'hwTrapSensorName','');" +
-        padlinebreak)
+    
+    if "PreciseTrap" in oid:
+        sensorStr = "'hwPreciseTrapName'"
+        bladeStr = "'hwPreciseTrapBlade'"
+    else:
+        sensorStr = "'hwTrapSensorName'"
+        bladeStr = "'hwTrapBlade'"
+    
+    if "BMC" in devicetype:
+        property1 = create_node(
+            "property", {"type": "text", "id": "transform", "mode": "w"},
+            'evt.summary = getattr(evt, "' + oid + '",'
+            ' "' +
+            desc + '");evt.severity=' + sev + ";" +
+            "evt.component=getattr(evt,'hwTrapSensorName','');" +
+            padlinebreak)
+    else:
+        property1 = create_node(
+            "property", {"type": "text", "id": "transform", "mode": "w"},
+            'evt.summary = getattr(evt, "' + oid + '",'
+            ' "' +
+            desc + '");evt.severity=' + sev + ";" +
+            "evt.component=getattr(evt," + bladeStr + ",'') + '_' + getattr(evt," + sensorStr + ",'');" +
+            padlinebreak)
 
     property2 = create_node(
         "property", {"type": "string", "id": "eventClassKey", "mode": "w"},
@@ -114,7 +134,11 @@ def modifyeventmapnode(tree, eventclassnodes, eventclasskey, desc, oid, sev, dev
     modify device event node
     '''
     padlinebreak = '\n'
-
+    if "1.3.6.1.4.1.2011.2.82.1.82.501" in oid:
+        sensorStr = 'hwPreciseTrapName'
+    else:
+        sensorStr = 'hwTrapSensorName'
+        
     parent_nodes = find_nodes(tree,
                               'object/object[@id="/zport/dmd/Events/Huawei/' + devicetype + '"]/tomanycont/object')
 
@@ -127,7 +151,7 @@ def modifyeventmapnode(tree, eventclassnodes, eventclasskey, desc, oid, sev, dev
                                  oid + '", "' + desc +
                                  '");evt.severity=' + sev +
                                  ";" + "evt.component = " +
-                                 "getattr(evt, 'hwTrapSensorName', '');" +
+                                 "getattr(evt, "+sensorStr+", '');" +
                                  padlinebreak})
 
     # evt.component = getattr(evt, 'hwTrapSensorName', '');

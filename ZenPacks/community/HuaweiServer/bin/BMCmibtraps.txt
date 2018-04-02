@@ -200,17 +200,1174 @@ hwLogFull	Informational	2	1.3.6.1.4.1.2011.2.235.1.1.500.10.1808.129
 hwLogFullDeassert	Informational deasserted	2	1.3.6.1.4.1.2011.2.235.1.1.500.10.1808.130
 hwBoardMismatchAssert	State Asserted	4	1.3.6.1.4.1.2011.2.235.1.1.500.10.786.17
 hwBoardMismatchDeassert	State Asserted	4	1.3.6.1.4.1.2011.2.235.1.1.500.10.786.18
-hwMemoryConfigError	Fault status Memory configuration error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.37
-hwMemoryConfigErrorDeassert	Memory configuration error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.38
-hwMemoryInitializationError	Memory configuration error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.39
-hwMemoryInitializationErrorDeassert	Memory configuration error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.40
-hwCPUMemoryConfigError	CPU memory configuration error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.75
-hwCPUMemoryConfigErrorDeassert	CPU memory configuration error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.76
-hwCPUMRCFatalError	CPU memory MRC fatal error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.77
-hwCPUMRCFatalErrorDeassert	CPU memory MRC fatal error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.78
-hwNoAvailableMemoryError	CPU has no available memory	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.79
-hwNoAvailableMemoryErrorDeassert	CPU has no available memory deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.80
-hwMemoryBoardSMI2TainingError	Memory board SMI2 training error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.5
-hwMemoryBoardSMI2TainingErrorDeassert	Memory board SMI2 training error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.6
-hwMainboardSMI2TainingError	Mainboard SMI2 training error	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.155
-hwMainboardSMI2TainingErrorDeassert	Mainboard SMI2 training error deassert	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.156
+hwChassisInletOverTempMinor	Air inlet overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.1
+hwChassisInletOverTempMinorDeassert	Air inlet overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.2
+hwChassisInletOverTempMajor	Air inlet overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.3
+hwChassisInletOverTempMajorDeassert	Air inlet overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.4
+hwPCHOverTemp	PCH overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.1
+hwPCHOverTempDeassert	PCH overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.2
+hwCPUOverTempMajor	CPU underclocking will be caused by high temperature. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.3
+hwCPUOverTempMajorDeassert	CPU underclocking will be caused by high temperature. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.4
+hwCPUVDDQOverTempMinor	CPU VDDQ overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.5
+hwCPUVDDQOverTempMinorDeassert	CPU VDDQ overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.6
+hwCPUVRDOverTempMinor	CPU VRD overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.7
+hwCPUVRDOverTempMinorDeassert	CPU VRD overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.8
+hwMemoryOverTemp	DIMM overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.1
+hwMemoryOverTempDeassert	DIMM overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.2
+hwMainboard3V3LowerVoltage	System 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.1
+hwMainboard3V3LowerVoltageDeassert	System 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.2
+hwMainboard3V3OverVoltage	System 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.3
+hwMainboard3V3OverVoltageDeassert	System 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.4
+hwMainboard5VLowerVoltage	System 5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.5
+hwMainboard5VLowerVoltageDeassert	System 5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.6
+hwMainboard5VOverVoltage	System 5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.7
+hwMainboard5VOverVoltageDeassert	System 5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.8
+hwMainboard12VLowerVoltage	System 12V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.9
+hwMainboard12VLowerVoltageDeassert	System 12V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.10
+hwMainboard12VOverVoltage	System 12V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.11
+hwMainboard12VOverVoltageDeassert	System 12V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.12
+hwCPUCoreLowerVoltage	CPU undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.11
+hwCPUCoreLowerVoltageDeassert	CPU undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.12
+hwCPUCoreOverVoltage	CPU overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.13
+hwCPUCoreOverVoltageDeassert	CPU overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.14
+hwMemoryVDDQ1LowerVoltage	DIMM VDDQ1 undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.3
+hwMemoryVDDQ1LowerVoltageDeassert	DIMM VDDQ1 undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.4
+hwMemoryVDDQ1OverVoltage	DIMM VDDQ1 overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.5
+hwMemoryVDDQ1OverVoltageDeassert	DIMM VDDQ1 overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.6
+hwMemoryVDDQ2LowerVoltage	DIMM VDDQ2 undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.7
+hwMemoryVDDQ2LowerVoltageDeassert	DIMM VDDQ2 undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.8
+hwMemoryVDDQ2OverVoltage	DIMM VDDQ2 overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.9
+hwMemoryVDDQ2OverVoltageDeassert	DIMM VDDQ2 overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.10
+hwRAIDCardOverTemp	RAID controller card overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.11
+hwRAIDCardOverTempDeassert	RAID controller card overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.12
+hwSystemCPUOverLoad	High CPU usage. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.1
+hwSystemCPUOverLoadDeassert	High CPU usage. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.2
+hwSystemMemoryOverLoad	High memory usage. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.3
+hwSystemMemoryOverLoadDeassert	High memory usage. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.4
+hwCPUOverTempCritical	The server will be powered off due to high CPU temperature. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.15
+hwCPUOverTempCriticalDeassert	The server will be powered off due to high CPU temperature. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.16
+hwCPUSelfTestFailure	CPU self-test failed. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.17
+hwCPUSelfTestFailureDeassert	CPU self-test failed. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.18
+hwCPUCFGError	Incorrect CPU configuration. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.19
+hwCPUCFGErrorDeassert	Incorrect CPU configuration. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.20
+hwCPUInstalled	CPU installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.21
+hwCPURemoved	CPU removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.23
+hwCPULowerDiffTempMinor	The CPU is about to reach the Max. temperature of minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.25
+hwCPULowerDiffTempMinorDeassert	The CPU is about to reach the Max. temperature of minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.26
+hwCPUIerrFault	CPU IERR error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.27
+hwCPUIerrFaultDeassert	CPU IERR error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.28
+hwSystemPowerFailure	System powered off exceptionally. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.7
+hwSystemPowerFailureDeassert	System powered off exceptionally. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.8
+hwPSUInstalled	PSU installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.3
+hwPSURemoved	PSU removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.5
+hwPSURedundancyLost	Power supply redundancy lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.7
+hwPSURedundancyLostDeassert	Power supply redundancy lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.8
+hwPSUFault	PSU fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.9
+hwPSUFaultDeassert	PSU fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.10
+hwPSUPredictiveFailure	PSU predictive fault. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.11
+hwPSUPredictiveFailureDeassert	PSU predictive fault. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.12
+hwPSUInputLost	Input power lost. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.13
+hwPSUInputLostDeassert	Input power lost. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.14
+hwPSUFanFault	PSU fan fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.15
+hwPSUFanFaultDeassert	PSU fan fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.16
+hwSystemACPIWorkingState	ACPI in operating status.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.9
+hwSystemACPISoftOffState	ACPI in down status.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.11
+hwSystemACPINoMemory	No memory detected in system POST. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.13
+hwSystemACPINoMemoryDeassert	No memory detected in system POST. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.14
+hwButtonPowerButtonPressed	Power button pressed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.50.1
+hwSystemUnknownReasonRestart	System restarted due to unknown reason.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.15
+hwSystemRestartByCommand	System restarted by system control command.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.17
+hwSystemRestartByPowerButton	System restarted by power button.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.19
+hwSystemRestartByWatchDogTmout	System restarted by watch dog timed out.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.21
+hwSystemRestartByTurnOnStrategy	System restarted as per power-on strategy Turn On.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.23
+hwSystemRestartByRestorePreviousStrategy	System restarted as per power-on strategy Restore Previous State.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.25
+hwSystemOSStartNoBootDevice	OS failed to start due to lack of boot media.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.27
+hwSystemOSStartNoBootDisk	OS failed to start due to lack of boot disk.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.29
+hwSystemOSStartNoPXEService	OS failed to start due to lack of PXE server.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.31
+hwSystemOSStartInvalidBootPartition	OS failed to start due to invalid boot partition.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.33
+hwSystemWTDTmoutNoAction	No action upon watch dog timeout. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.35
+hwSystemWTDTmoutNoActionDeassert	No action upon watch dog timeout. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.36
+hwSystemWTDTmoutForceReset	Forced restart upon watch dog timeout. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.37
+hwSystemWTDTmoutForceResetDeassert	Forced restart upon watch dog timeout. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.38
+hwSystemWTDTmoutForcePowerOff	System power-off upon watch dog timeout. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.39
+hwSystemWTDTmoutForcePowerOffDeassert	System power-off upon watch dog timeout. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.40
+hwSystemWTDTmoutForcedPowerOffThenOn	Forced power cycle upon watch dog timeout. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.41
+hwSystemWTDTmoutForcedPowerOffThenOnDeassert	Forced power cycle upon watch dog timeout. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.42
+hwDiskInstalled	Hard disk installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.3
+hwDiskRemoved	Hard disk removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.5
+hwDiskFault	Hard disk fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.7
+hwDiskFaultDeassert	Hard disk fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.8
+hwDiskPredictiveFailure	Hard disk predictive fault. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.9
+hwDiskPredictiveFailureDeassert	Hard disk predictive fault. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.10
+hwDiskRAIDArrayInvalid	RAID array invalid. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.11
+hwDiskRAIDArrayInvalidDeassert	RAID array invalid. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.12
+hwDiskRAIDRebuildStart	Starting to rebuild RAID.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.13
+hwDiskRAIDRebuildComplete	Hard disk RAID rebuild completed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.15
+hwDiskUncorrectableErr	Hard disk MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.19
+hwDiskUncorrectableErrDeassert	Hard disk MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.20
+hwFanInstalled	Fan installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.1
+hwFanRemoved	Fan removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.3
+hwFanRedundancy	Fan redundancy lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.5
+hwFanRedundancyDeassert	Fan redundancy lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.6
+hwFanSpeedDeviation	Large fan speed deviation. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.7
+hwFanSpeedDeviationDeassert	Large fan speed deviation. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.5.8
+hwRAIDCardInstalled	RAID controller card installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.1
+hwRAIDCardRemoved	RAID controller card removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.3
+hwPCIeRiserInstalled	PCIe riser card installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.1
+hwPCIeRiserRemoved	PCIe riser card removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.3
+hwMainboardRTCLowerVoltage	Mainboard RTC battery undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.13
+hwMainboardRTCLowerVoltageDeassert	Mainboard RTC battery undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.14
+hwCableSASIncorrectConnection	Incorrect SAS cable connection. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.1
+hwCableSASIncorrectConnectionDeassert	Incorrect SAS cable connection. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.2
+hwRAIDCardFault	RAID controller card fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.5
+hwRAIDCardFaultDeassert	RAID controller card fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.6
+hwMemoryCorrectableECC	DIMM ECC error count exceeded. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.13
+hwMemoryCorrectableECCDeassert	DIMM ECC error count exceeded. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.14
+hwMemoryInstalled	DIMM installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.15
+hwMemoryRemoved	DIMM removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.17
+hwMemoryCFGErr	Incorrect memory configuration. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.21
+hwMemoryCFGErrDeassert	Incorrect memory configuration. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.22
+hwRAIDCardUncorrectableErr	RAID controller card MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.7
+hwRAIDCardUncorrectableErrDeassert	RAID controller card MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.8
+hwPCIeCardUncorrectableErr	PCIe card MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.1
+hwPCIeCardUncorrectableErrDeassert	PCIe card MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.2
+hwSystemPowerOnTmout	Power-on timed out. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.43
+hwSystemPowerOnTmoutDeassert	Power-on timed out. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.44
+hwSystemPowerCapFailure	Power capping failed. (Generated) 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.45
+hwSystemPowerCapFailureDeassert	Power capping failed. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.46
+hwCableCPLDIncorrectConnection	Improper CPLD signal cable connection. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.3
+hwCableCPLDIncorrectConnectionDeassert	Improper CPLD signal cable connection. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.4
+hwDiskBackplanePSFault	Hard disk backplane power failure. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.1
+hwDiskBackplanePSFaultDeassert	Hard disk backplane power failure. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.2
+hwPortDisconnected	NIC port link down. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.1
+hwPortConnected	NIC port link down. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.2
+hwChassisCoverOpened	Chassis cover opened.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.5
+hwChassisCoverClosed	Chassis cover closed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.7
+hwLCDInstalled	LCD installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.18.1
+hwLCDRemoved	LCD removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.18.3
+hwLCDModuleFault	LCD fault. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.18.5
+hwLCDModuleFaultDeassert	LCD fault. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.18.6
+hwSDInstalled	SD card installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.1
+hwSDRemoved	SD card removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.3
+hwSDSRAIDArrayInvalid	SD card RAID lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.5
+hwSDSRAIDArrayInvalidDeassert	SD card RAID lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.6
+hwSDRAIDRebuildStart	SD card starting to rebuild RAID.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.7
+hwSDRAIDRebuildFinish	SD card RAID rebuild completed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.9
+hwSDRAIDRebuildFailure	SD card RAID rebuild failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.11
+hwSDRAIDRebuildFailureDeassert	SD card RAID rebuild failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.12
+hwSDFault	SD card fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.13
+hwSDFaultDeassert	SD card fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.14
+hwSDDetectCardFailure	SD card not detected. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.15
+hwSDDetectCardFailureDeassert	SD card not detected. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.34.16
+hwDiskOverTempMinor	Hard disk overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.21
+hwDiskOverTempMinorDeassert	Hard disk overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.22
+hwPCIeCardOverTemp	PCIe card overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.3
+hwPCIeCardOverTempDeassert	PCIe card overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.4
+hwSystemAbnormallyReset	System information. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.47
+hwSystemAbnormallyResetDeassert	System information. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.48
+hwSystemFaultCritical	System error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.49
+hwSystemFaultCriticalDeassert	System error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.50
+hwMemoryUncorrectableErr	DIMM MCE error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.23
+hwMemoryUncorrectableErrDeassert	DIMM MCE error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.24
+hwCPUUncorrectableErr	CPU MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.29
+hwCPUUncorrectableErrDeassert	CPU MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.30
+hwNetworkCardUncorrectableErr	NIC MCE/AER error.(Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.1
+hwNetworkCardUncorrectableErrDeassert	NIC MCE/AER error.( Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.2
+hwPCHUncorrectableErr	PCH MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.3
+hwPCHUncorrectableErrDeassert	PCH MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.4
+hwMainboardStdby3V3LowerVoltage	Standby 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.15
+hwMainboardStdby3V3LowerVoltageDeassert	Standby 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.16
+hwMainboardStdby3V3OverVoltage	Standby 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.17
+hwMainboardStdby3V3OverVoltageDeassert	Standby 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.18
+hwPCHLowerVoltage	Southbridge undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.5
+hwPCHLowerVoltageDeassert	Southbridge undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.6
+hwPCHOverVoltage	Southbridge overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.7
+hwPCHOverVoltageDeassert	Southbridge overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.8
+hwMainboardIncorrectHWAddr	Incorrect hardware address of board. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.19
+hwMainboardIncorrectHWAddrDeassert	Incorrect hardware address of board. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.20
+hwMainboardCPLDSelfTestFailure	Mainboard CPLD self-test status. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.21
+hwMainboardCPLDSelfTestFailureDeassert	Mainboard CPLD self-test status. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.22
+hwBMCEEPSelfCheckFailure	BMC EEPROM self-test status. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.7
+hwBMCEEPSelfCheckFailureDeassert	BMC EEPROM self-test status. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.8
+hwBMCStatelessCFGFailure	Stateless computing event in chassis. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.9
+hwBMCStatelessCFGFailureDeassert	tateless computing event in chassis. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.10
+hwPCHClockSignalLost	Southbridge clock lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.9
+hwPCHClockSignalLostDeassert	Southbridge clock lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.10
+hwMezzCardOverTempMinor	Mezzanine card overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.1
+hwMezzCardOverTempMinorDeassert	Mezzanine card overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.2
+hwMezzCardOverTempMajor	Mezzanine card overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.3
+hwMezzCardOverTempMajorDeassert	Mezzanine card overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.4
+hwDiskBackplaneCPLDSelfTestFailure	Hard disk backplane CPLD self-test failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.3
+hwDiskBackplaneCPLDSelfTestFailureDeassert	Hard disk backplane CPLD self-test failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.4
+hwExpandFault	Hard disk backplane expander fault. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.51.1
+hwExpandFaultDeassert	Hard disk backplane expander fault. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.51.2
+hwCPUCoreIsolated	CPU core isolated. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.31
+hwCPUCoreIsolatedDeassert	CPU core isolated. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.32
+hwMainboardPSFault	Mainboard power supply failure. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.23
+hwMainboardPSFaultDeassert	Mainboard power supply failure. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.24
+hwMainboardAccessSlotFailure	Incorrect slot number. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.25
+hwMainboardAccessSlotFailureDeassert	Incorrect slot number. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.26
+hwMainboardNotProperlyInstalled	Board not securely installed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.27
+hwMainboardNotProperlyInstalledDeassert	Board not securely installed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.28
+hwMainboardAccessBoardIDFailure	Incorrect board ID. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.29
+hwMainboardAccessBoardIDFailureDeassert	Incorrect board ID. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.30
+hwBMCVersionChanged	Version changed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.11
+hwBMCRestartedAfterPowerRestored	BMC started after AC power restored. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.13
+hwBMCEventCleared	Event log cleared.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.15
+hwBMCEventSpaceExceedThreshold	Event log is about to full. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.17
+hwBMCEventSpaceExceedThresholdDeassert	Event log is about to full. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.18
+hwMainboardStdby1VLowerVoltage	Mainboard standby 1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.31
+hwMainboardStdby1VLowerVoltageDeassert	Mainboard standby 1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.32
+hwMainboardStdby1VOverVoltage	Mainboard standby 1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.33
+hwMainboardStdby1VOverVoltageDeassert	Mainboard standby 1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.34
+hwMainboardStdby2V5LowerVoltage	Mainboard standby 2.5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.35
+hwMainboardStdby2V5LowerVoltageDeassert	Mainboard standby 2.5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.36
+hwMainboardStdby2V5OverVoltage	Mainboard standby 2.5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.37
+hwMainboardStdby2V5OverVoltageDeassert	Mainboard standby 2.5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.38
+hwMainboard1VLowerVoltage	Mainboard 1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.39
+hwMainboard1VLowerVoltageDeassert	Mainboard 1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.40
+hwMainboard1VOverVoltage	Mainboard 1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.41
+hwMainboard1VOverVoltageDeassert	Mainboard 1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.42
+hwFabricPlaneLSWVDDLowerVoltage	Fabric plane LSW chip VDD undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.1
+hwFabricPlaneLSWVDDLowerVoltageDeassert	Fabric plane LSW chip VDD undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.2
+hwFabricPlaneLSWVDDOverVoltage	Fabric plane LSW chip VDD overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.3
+hwFabricPlaneLSWVDDOverVoltageDeassert	Fabric plane LSW chip VDD overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.4
+hwFabricPlaneLSWVcoreLowerVoltage	Fabric plane LSW chip Vcore undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.5
+hwFabricPlaneLSWVcoreLowerVoltageDeassert	Fabric plane LSW chip Vcore undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.6
+hwFabricPlaneLSWVcoreOverVoltage	Fabric plane LSW chip Vcore overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.7
+hwFabricPlaneLSWVcoreOverVoltageDeassert	Fabric plane LSW chip Vcore overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.8
+hwMainboard1V5LowerVoltage	Mainboard 1.5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.43
+hwMainboard1V5LowerVoltageDeassert	Mainboard 1.5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.44
+hwMainboard1V5OverVoltage	Mainboard 1.5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.45
+hwMainboard1V5OverVoltageDeassert	Mainboard 1.5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.46
+hwMainboardMOSOverVoltageMajor	Large voltage difference on mainboard MOSFET (major alarm). (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.47
+hwMainboardMOSOverVoltageMajorDeassert	Large voltage difference on mainboard MOSFET (major alarm). (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.48
+hwMainboardMOSOverVoltageCritical	Large voltage difference on mainboard MOSFET (critical alarm). (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.49
+hwMainboardMOSOverVoltageCriticalDeassert	Large voltage difference on mainboard MOSFET (critical alarm). (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.50
+hwFabricPlaneLSWOverTempMinor	Fabric plane LSW chip overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.9
+hwFabricPlaneLSWOverTempMinorDeassert	Fabric plane LSW chip overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.10
+hwFabricPlaneLSWOverTempMajor	Fabric plane LSW chip overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.11
+hwFabricPlaneLSWOverTempMajorDeassert	Fabric plane LSW chip overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.12
+hwChassisOutletOverTempMinor	Air outlet overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.9
+hwChassisOutletOverTempMinorDeassert	Air outlet overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.10
+hwFabricPlaneCPUOverTempMinor	Fabric plane CPU overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.15
+hwFabricPlaneCPUOverTempMinorDeassert	Fabric plane CPU overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.16
+hwFabricPlaneCPUOverTempMajor	Fabric plane CPU overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.17
+hwFabricPlaneCPUOverTempMajorDeassert	Fabric plane CPU overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.18
+hwFabricPlaneLSWFault	Fabric plane LSW chip fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.21
+hwFabricPlaneLSWFaultDeassert	Fabric plane LSW chip fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.22
+hwBMCMMHeartBeatFault	iBMC-MM heartbeat abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.19
+hwBMCMMHeartBeatFaultDeassert	iBMC-MM heartbeat abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.20
+hwBMCBaseplaneHeartBeatFault	iBMC-Base heartbeat abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.21
+hwBMCBaseplaneHeartBeatFaultDeassert	iBMC-Base heartbeat abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.22
+hwBMCFabricplaneHeartBeatFault	iBMC-Fabric heartbeat abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.23
+hwBMCFabricplaneHeartBeatFaultDeassert	iBMC-Fabric heartbeat abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.24
+hwSwitchMezzFault	Mezzanine card fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.5
+hwSwitchMezzFaultDeassert	Mezzanine card fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.6
+hwSwitchMezz2V5LowerVoltage	Mezzanine card 2.5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.7
+hwSwitchMezz2V5LowerVoltageDeassert	Mezzanine card 2.5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.8
+hwSwitchMezz2V5OverVoltage	Mezzanine card 2.5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.9
+hwSwitchMezz2V5OverVoltageDeassert	Mezzanine card 2.5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.10
+hwSwitchMezz3V3LowerVoltage	Mezzanine card 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.11
+hwSwitchMezz3V3LowerVoltageDeassert	Mezzanine card 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.12
+hwSwitchMezz3V3OverVoltage	Mezzanine card 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.13
+hwSwitchMezz3V3OverVoltageDeassert	Mezzanine card 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.14
+hwSwitchMezz12VLowerVoltage	Mezzanine card 12V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.15
+hwSwitchMezz12VLowerVoltageDeassert	Mezzanine card 12V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.16
+hwSwitchMezz12VOverVoltage	Mezzanine card 12V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.17
+hwSwitchMezz12VOverVoltageDeassert	Mezzanine card 12V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.18
+hwSwitchMezz1VLowerVoltage	Mezzanine card 1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.19
+hwSwitchMezz1VLowerVoltageDeassert	Mezzanine card 1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.20
+hwSwitchMezz1VOverVoltage	Mezzanine card 1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.21
+hwSwitchMezz1VOverVoltageDeassert	Mezzanine card 1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.22
+hwSwitchMezz1V8LowerVoltage	Mezzanine card 1.8V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.23
+hwSwitchMezz1V8LowerVoltageDeassert	Mezzanine card 1.8V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.24
+hwSwitchMezz1V8OverVoltage	Mezzanine card 1.8V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.25
+hwSwitchMezz1V8OverVoltageDeassert	Mezzanine card 1.8V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.26
+hwSwitchMezz1V5LowerVoltage	Mezzanine card 1.5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.27
+hwSwitchMezz1V5LowerVoltageDeassert	Mezzanine card 1.5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.28
+hwSwitchMezz1V5OverVoltage	Mezzanine card 1.5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.29
+hwSwitchMezz1V5OverVoltageDeassert	Mezzanine card 1.5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.30
+hwSwitchMezzStdby3V3LowerVoltage	Mezzanine card standby 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.31
+hwSwitchMezzStdby3V3LowerVoltageDeassert	Mezzanine card standby 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.32
+hwSwitchMezzStdby3V3OverVoltage	Mezzanine card standby 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.33
+hwSwitchMezzStdby3V3OverVoltageDeassert	Mezzanine card standby 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.34
+hwMainboardStdby5VLowerVoltage	Standby 5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.51
+hwMainboardStdby5VLowerVoltageDeassert	Standby 5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.52
+hwMainboardStdby5VOverVoltage	Standby 5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.53
+hwMainboardStdby5VOverVoltageDeassert	Standby 5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.54
+hwCableQPILinkFailure	Abnormal QPI link between CPUs. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.5
+hwCableQPILinkFailureDeassert	Abnormal QPI link between CPUs. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.6
+hwIOBoardInletMOverTemp	Middle of I/O board air inlet overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.1
+hwIOBoardInletMOverTempDeassert	Middle of I/O board air inlet overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.2
+hwIOBoardInletROverTemp	Right of I/O board air inlet overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.3
+hwIOBoardInletROverTempDeassert	Right of I/O board air inlet overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.4
+hwIOBoardInletLOverTemp	Left of I/O board air inlet overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.5
+hwIOBoardInletLOverTempDeassert	Left of I/O board air inlet overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.6
+hwPSUOverTemp	PSU overheating. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.17
+hwPSUOverTempDeassert	PSU overheating. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.18
+hwCPUBoardOverTemp	CPU board overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.1
+hwCPUBoardOverTempDeassert	CPU board overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.2
+hwBMCSlaveBMCHeartBeatFault	Active-standby iBMC heartbeat abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.25
+hwBMCSlaveBMCHeartBeatFaultDeassert	Active-standby iBMC heartbeat abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.26
+hwMainboard1V1LowerVoltage	System 1.1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.59
+hwMainboard1V1LowerVoltageDeassert	System 1.1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.60
+hwMainboard1V1OverVoltage	System 1.1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.61
+hwMainboard1V1OverVoltageDeassert	System 1.1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.62
+hwMainboardStdby1V2LowerVoltage	Mainboard standby 1.2V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.63
+hwMainboardStdby1V2LowerVoltageDeassert	Mainboard standby 1.2V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.64
+hwMainboardStdby1V2OverVoltage	Mainboard standby 1.2V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.65
+hwMainboardStdby1V2OverVoltageDeassert	Mainboard standby 1.2V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.66
+hwNCBoardOverTemp	NCM chip overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.5
+hwNCBoardOverTempDeassert	NCM chip overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.6
+hwNCBoardBandwidthDegrade	NCM chip bandwidth decreased by 50% or ECC error. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.7
+hwNCBoardBandwidthDegradeDeassert	NCM chip bandwidth decreased by 50% or ECC error. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.8
+hwNCBoardSEV2Fault	SEV2 fault occurred on NCM chip. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.9
+hwNCBoardSEV2FaultDeassert	SEV2 fault occurred on NCM chip. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.10
+hwCableCXPLinkFault	CXP cable lane drop or some logical link down. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.7
+hwCableCXPLinkFaultDeassert	CXP cable lane drop or some logical link down. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.8
+hwCableCXPLinkDown	CXP cable link down major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.9
+hwCableCXPLinkDownDeassert	CXP cable link down major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.10
+hwMemoryVPP1LowerVoltage	DIMM VPP1 undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.25
+hwMemoryVPP1LowerVoltageDeassert	DIMM VPP1 undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.26
+hwMemoryVPP1OverVoltage	DIMM VPP1 overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.27
+hwMemoryVPP1OverVoltageDeassert	DIMM VPP1 overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.28
+hwMezzCardUncorrectableErr	Mezzanine card MCE/AER error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.5
+hwMezzCardUncorrectableErrDeassert	Mezzanine card MCE/AER error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.6
+hwSystemDiffCPUModule	Inconsistent CPU models. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.55
+hwSystemDiffCPUModuleDeassert	Inconsistent CPU models. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.56
+hwSystemSuspended	System suspended during startup. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.57
+hwSystemSuspendedDeassert	System suspended during startup. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.58
+hwButtonUIDButtonpressed	UID button pressed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.50.3
+hwCPUFaultyIsolated	CPU isolated. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.33
+hwCPUFaultyIsolatedDeassert	CPU isolated. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.34
+hwMemorySwitchToStdbyBoard	DIMMs go standby. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.29
+hwMemorySwitchToStdbyBoardDeassert	DIMMs go standby.(Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.30
+hwMainboardNotInstalled	Mainboard not installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.75
+hwMainboardNotPowerOn	Mainboard installed but powered off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.77
+hwMainboardReqPowerOn	Mainboard requesting power-on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.79
+hwMainboardBeingPowerOn	Mainboard in power-on process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.81
+hwMainboardPoweredOn	Mainboard powered on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.83
+hwMainboardReqPowerOff	Mainboard requesting power-off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.85
+hwMainboardBeingPowerOff	Mainboard in power-off process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.87
+hwMainboardAndManageBoardCommLost	Mainboard-MM communication interrupted. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.89
+hwMainboardAndManageBoardCommLostDeassert	Mainboard-MM communication interrupted. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.90
+hwBasePlaneNotInstalled	Base module not installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.1
+hwBasePlanePowerOff	Base module installed but powered off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.3
+hwBasePlanePowerOnReq	Base module requesting power-on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.5
+hwBasePlaneBeingPowerOn	Base module in power-on process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.7
+hwBasePlanePoweredOn	Base module powered on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.9
+hwBasePlanePowerOffReq	Base module requesting power-off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.11
+hwBasePlaneBeingPowerOff	Base module in power-off process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.13
+hwFabricPlaneNotInstalled	Fabric module not installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.23
+hwFabricPlanePowerOff	Fabric module installed but powered off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.25
+hwFabricPlaneReqPowerOn	Fabric module requesting power-on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.27
+hwFabricPlaneBeingPoweredOn	Fabric module in power-on process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.29
+hwFabricPlanePoweredOn	Fabric module powered on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.31
+hwFabricPlaneReqPoweredOff	Fabric module requesting power-off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.33
+hwFabricPlaneInProgressPoweredOff	Fabric module in power-off process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.35
+hwSwitchMezzNotInstalled	Mezzanine card not installed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.35
+hwSwitchMezzPowerOff	Mezzanine card installed but powered off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.37
+hwSwitchMezzReqPowerOn	Mezzanine card requesting power-on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.39
+hwSwitchMezzBeingPoweredOn	Mezzanine card in power-on process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.41
+hwSwitchMezzPoweredOn	Mezzanine card powered on.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.43
+hwSwitchMezzReqPowerOff	Mezzanine card requesting power-off.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.45
+hwSwitchMezzBeingPoweredOff	Mezzanine card in power-off process.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.47
+hwButtonPCIeHotSwapButtonPressed	PCIe card hot-swap button pressed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.50.5
+hwChassisInletOverTempCritical	Air inlet overheating critical alarm. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.15
+hwChassisInletOverTempCriticalDeassert	Air inlet overheating critical alarm. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.16
+hwBMCOPLogSpaceExceedThreshold	Operation log is about to full. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.27
+hwBMCOPLogSpaceExceedThresholdDeassert	Operation log is about to full. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.28
+hwBMCSecureLogSpaceExceedThreshold	Security log is about to full. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.29
+hwBMCSecureLogSpaceExceedThresholdDeassert	Security log is about to full. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.30
+hwChassisInsufficientPower	Insufficient power supply to chassis. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.17
+hwChassisInsufficientPowerDeassert	Insufficient power supply to chassis. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.18
+hwBasePlaneLSWFault	Base module service LSW fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.17
+hwBasePlaneLSWFaultDeassert	Base module service LSW fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.18
+hwBasePlaneLSWOverTempMinor	Base plane LSW overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.19
+hwBasePlaneLSWOverTempMinorDeassert	Base plane LSW overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.20
+hwBasePlaneLSWOverTempMajor	Base plane LSW overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.21
+hwBasePlaneLSWOverTempMajorDeassert	Base plane LSW overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.22
+hwBMCLSWFault	Management LSW chip fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.31
+hwBMCLSWFaultDeassert	Management LSW chip fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.32
+hwPICCard3V3LowerVoltage	PIC card 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.1
+hwPICCard3V3LowerVoltageDeassert	PIC card 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.2
+hwPICCard3V3OverVoltage	PIC card 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.3
+hwPICCard3V3OverVoltageDeassert	PIC card 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.4
+hwPICCard1V2LowerVoltage	PIC card 1.2V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.5
+hwPICCard1V2LowerVoltageDeassert	PIC card 1.2V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.6
+hwPICCard1V2OverVoltage	PIC card 1.2V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.7
+hwPICCard1V2OverVoltageDeassert	PIC card 1.2V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.8
+hwPICCard1VLowerVoltage	PIC card 1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.9
+hwPICCard1VLowerVoltageDeassert	PIC card 1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.10
+hwPICCard1VOverVoltage	PIC card 1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.11
+hwPICCard1VOverVoltageDeassert	PIC card 1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.12
+hwPICCard12VLowerVoltage	PIC card 12V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.13
+hwPICCard12VLowerVoltageDeassert	PIC card 12V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.14
+hwPICCard12VOverVoltage	PIC card 12V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.15
+hwPICCard12VOverVoltageDeassert	PIC card 12V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.16
+hwPICCardOverTempMinor	PIC card overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.17
+hwPICCardOverTempMinorDeassert	PIC card overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.18
+hwPICCardOverTempMajor	PIC card overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.19
+hwPICCardOverTempMajorDeassert	PIC card overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.20
+hwPICCardInstalled	PIC card installed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.21
+hwPICCardRemoved	PIC card removed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.23
+hwPICCardPSFault	PIC card power failure. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.25
+hwPICCardPSFaultDeassert	PIC card power failure. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.26
+hwPICCardFault	PIC card fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.27
+hwPICCardFaultDeassert	PIC card fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.28
+hwMainboardMOSOverTemp	Soft-start circuit overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.91
+hwMainboardMOSOverTempDeassert	Soft-start circuit overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.92
+hwMainboardSoftStartPGAbnormal	Soft-start circuit power supply abnormal. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.93
+hwMainboardSoftStartPGAbnormalDeassert	Soft-start circuit power supply abnormal. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.94
+hwMainboardSoftStartFault	Critical fault on soft-start circuit. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.95
+hwMainboardSoftStartFaultDeassert	Critical fault on soft-start circuit. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.96
+hwPHYMDIOErr	PHY fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.44.1
+hwPHYMDIOErrDeassert	PHY fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.44.2
+hwPortInstalled	Port connected.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.5
+hwPortRemoved	Port removed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.7
+hwPortFault	Port fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.9
+hwPortFaultDeassert	Port fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.10
+hwMainboardVideoControlFault	Video controller fault. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.97
+hwMainboardVideoControlFaultDeassert	Video controller fault. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.98
+hwChassisAccessInletTempFailure	Failed to read air inlet temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.19
+hwChassisAccessInletTempFailureDeassert	Failed to read air inlet temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.20
+hwMainboardAccess3V3Failure	Failed to read system 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.99
+hwMainboardAccess3V3FailureDeassert	Failed to read system 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.100
+hwMainboardAccess5VFailure	Failed to read system 5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.101
+hwMainboardAccess5VFailureDeassert	Failed to read system 5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.102
+hwMainboardAccess12VFailure	Failed to read system 12V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.103
+hwMainboardAccess12VFailureDeassert	Failed to read system 12V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.104
+hwMainboardAccess1V1Failure	Failed to read system 1.1V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.105
+hwMainboardAccess1V1FailureDeassert	Failed to read system 1.1V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.106
+hwMainboardAccess1V5Failure	Failed to read system 1.5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.107
+hwMainboardAccess1V5FailureDeassert	Failed to read system 1.5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.108
+hwMainboardAccessStdby5VFailure	Failed to read standby 5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.109
+hwMainboardAccessStdby5VFailureDeassert	Failed to read standby 5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.110
+hwMainboardAccessStdby3V3Failure	Failed to read standby 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.111
+hwMainboardAccessStdby3V3FailureDeassert	Failed to read standby 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.112
+hwMainboardAccessStdby2V5Failure	Failed to read standby 2.5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.113
+hwMainboardAccessStdby2V5FailureDeassert	Failed to read standby 2.5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.114
+hwMainboardAccessStdby1V5Failure	Failed to read standby 1.5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.115
+hwMainboardAccessStdby1V5FailureDeassert	Failed to read standby 1.5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.116
+hwMainboardAccessStdby1V2Failure	Failed to read standby 1.2V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.117
+hwMainboardAccessStdby1V2FailureDeassert	Failed to read standby 1.2V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.118
+hwMainboardAccessStdby1V1Failure	Failed to read standby 1.1V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.119
+hwMainboardAccessStdby1V1FailureDeassert	Failed to read standby 1.1V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.120
+hwMainboardAccessStdby1VFailure	Failed to read standby 1V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.121
+hwMainboardAccessStdby1VFailureDeassert	Failed to read standby 1V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.122
+hwMainboardMOSAccessVoltageFailure	Failed to read MOSFET voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.123
+hwMainboardMOSAccessVoltageFailureDeassert	Failed to read MOSFET voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.124
+hwBasePlaneLSWAccessTempFailure	Failed to read Base plane LSW temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.23
+hwBasePlaneLSWAccessTempFailureDeassert	Failed to read Base plane LSW temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.24
+hwFabricPlaneLSWAccessVDDFailure	Failed to read Fabric plane LSW chip VDD voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.39
+hwFabricPlaneLSWAccessVDDFailureDeassert	Failed to read Fabric plane LSW chip VDD voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.40
+hwFabricPlaneLSWAccessVcoreFailure	Failed to read Fabric plane LSW chip Vcore voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.41
+hwFabricPlaneLSWAccessVcoreFailureDeassert	Failed to read Fabric plane LSW chip Vcore voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.42
+hwFabricPlaneLSWAccessTempFailure	Failed to read Fabric plane LSW temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.43
+hwFabricPlaneLSWAccessTempFailureDeassert	Failed to read Fabric plane LSW temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.44
+hwFabricPlaneLSWAccessCPUTempFailure	Failed to read Fabric plane CPU temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.45
+hwFabricPlaneLSWAccessCPUTempFailureDeassert	Failed to read Fabric plane CPU temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.46
+hwSwitchMezzAccess2V5Failure	Failed to read mezzanine card 2.5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.51
+hwSwitchMezzAccess2V5FailureDeassert	Failed to read mezzanine card 2.5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.52
+hwSwitchMezzAccess3V3Failure	Failed to read mezzanine card 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.53
+hwSwitchMezzAccess3V3FailureDeassert	Failed to read mezzanine card 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.54
+hwSwitchMezzAccess12VFailure	Failed to read mezzanine card 12V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.55
+hwSwitchMezzAccess12VFailureDeassert	Failed to read mezzanine card 12V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.56
+hwSwitchMezzAccess1V5Failure	Failed to read mezzanine card 1.5V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.57
+hwSwitchMezzAccess1V5FailureDeassert	Failed to read mezzanine card 1.5V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.58
+hwSwitchMezzAccess1VFailure	Failed to read mezzanine card 1V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.59
+hwSwitchMezzAccess1VFailureDeassert	Failed to read mezzanine card 1V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.60
+hwSwitchMezzAccessStdby3V3Failure	Failed to read mezzanine card standby 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.61
+hwSwitchMezzAccessStdby3V3FailureDeassert	Failed to read mezzanine card standby 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.62
+hwPCIeCardAccessTempFailure	Failed to read PCIe card temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.5
+hwPCIeCardAccessTempFailureDeassert	Failed to read PCIe card temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.6
+hwCPUAccessCoreTempFailure	Failed to read CPU core temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.35
+hwCPUAccessCoreTempFailureDeassert	Failed to read CPU core temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.36
+hwCPUAccessVDDQTempFailure	Failed to read CPU VDDQ temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.37
+hwCPUAccessVDDQTempFailureDeassert	Failed to read CPU VDDQ temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.38
+hwDiskBackplaneAccessTempFailure	Access disk backplane temperature failed minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.13
+hwDiskBackplaneAccessTempFailureDeassert	Access disk backplane temperature failed minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.14
+hwMemoryVDDQ1AccessVoltageFailure	Failed to read DIMM VDDQ1 voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.31
+hwMemoryVDDQ1AccessVoltageFailureDeassert	Failed to read DIMM VDDQ1 voltage.  (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.32
+hwMemoryVDDQ2AccessVoltageFailure	Failed to read DIMM VDDQ2 voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.33
+hwMemoryVDDQ2AccessVoltageFailureDeassert	Failed to read DIMM VDDQ2 voltage.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.34
+hwSystemInconsistenMemoryBoard	Inconsistent models of memory boards. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.59
+hwSystemInconsistenMemoryBoardDeassert	Inconsistent models of memory boards. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.60
+hwSystemInconsistenCPUBoard	Inconsistent models of CPU boards. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.61
+hwSystemInconsistenCPUBoardDeassert	Inconsistent models of CPU boards. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.62
+hwCPUBoardAccessTempFailure	Failed to read CPU board temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.3
+hwCPUBoardAccessTempFailureDeassert	Failed to read CPU board temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.4
+hwRAIDCardAccessTempFailure	Failed to read RAID controller card temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.13
+hwRAIDCardAccessTempFailureDeassert	Failed to read RAID controller card temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.14
+hwPICCardAccess3V3Failure	Failed to read PIC card 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.29
+hwPICCardAccess3V3FailureDeassert	Failed to read PIC card 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.30
+hwPICCardAccess1V2Failure	Failed to read PIC card 1.2V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.31
+hwPICCardAccess1V2FailureDeassert	Failed to read PIC card 1.2V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.32
+hwPICCardAccess1VFailure	Failed to read PIC card 1V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.33
+hwPICCardAccess1VFailureDeassert	Failed to read PIC card 1V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.34
+hwPICCardAccessTempFailure	Failed to read PIC card temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.35
+hwPICCardAccessTempFailureDeassert	Failed to read PIC card temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.36
+hwIOBoardInletMAccessTempFailure	Failed to read temperature of the middle of I/O board air inlet. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.7
+hwIOBoardInletMAccessTempFailureDeassert	Failed to read temperature of the middle of I/O board air inlet. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.8
+hwIOBoardInletRAccessTempFailure	Failed to read temperature of the right of I/O board air inlet. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.9
+hwIOBoardInletRAccessTempFailureDeassert	Failed to read temperature of the right of I/O board air inlet. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.10
+hwIOBoardInletLAccessTempFailure	Failed to read temperature of the left of I/O board air inlet. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.11
+hwIOBoardInletLAccessTempFailureDeassert	Failed to read temperature of the left of I/O board air inlet. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.12
+hwMezzCardAccessTempFailure	Failed to read mezzanine card temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.7
+hwMezzCardAccessTempFailureDeassert	Failed to read mezzanine card temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.8
+hwNCBoardAccessTempFailure	Failed to read NCM chip temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.11
+hwNCBoardAccessTempFailureDeassert	Failed to read NCM chip temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.12
+hwPCHAccessTempFailure	Failed to read PCH temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.11
+hwPCHAccessTempFailureDeassert	Failed to read PCH temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.12
+hwPCHAccessVoltageFailure	Failed to read PCH voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.13
+hwPCHAccessVoltageFailureDeassert	Failed to read PCH voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.14
+hwNetworkCardOverTemp	NIC overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.3
+hwNetworkCardOverTempDeassert	NIC overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.4
+hwNetworkCardAccessTempFailure	Failed to read NIC temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.5
+hwNetworkCardAccessTempFailureDeassert	Failed to read NIC temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.6
+hwMainboardAccessFRULableFailure	Failed to read mainboard FRU data. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.137
+hwMainboardAccessFRULableFailureDeassert	Failed to read mainboard FRU data. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.138
+hwPCIeCardAccessFRULableFailure	Failed to read PCIe card FRU data. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.7
+hwPCIeCardAccessFRULableFailureDeassert	Failed to read PCIe card FRU data. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.8
+hwJCChipVMSEFault	CPU-JC VMSE error. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.1
+hwJCChipVMSEFaultDeassert	CPU-JC VMSE error. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.2
+hwBMCResetandStarted	iBMC reset and started.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.33
+hwChassisInletLowerTempMajor	Air inlet undertemperature major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.21
+hwChassisInletLowerTempMajorDeassert	Air inlet undertemperature major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.22
+hwSystemInsufficientCPU	Insufficient number of CPUs. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.63
+hwSystemInsufficientCPUDeassert	Insufficient number of CPUs. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.64
+hwSystemDiffCPUType	Inconsistent CPU types. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.65
+hwSystemDiffCPUTypeDeassert	Inconsistent CPU types. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.66
+hwSystemDiffHPCBoardType	Inconsistent HPC models. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.67
+hwSystemDiffHPCBoardTypeDeassert	Inconsistent HPC models. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.68
+hwSystemMismatchHPCBoardOrCPU	HPC type and CPU do not match. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.69
+hwSystemMismatchHPCBoardOrCPUDeassert	HPC type and CPU do not match. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.70
+hwCableQPILinkDegrade	CPU QPI connection degraded. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.11
+hwCableQPILinkDegradeDeassert	CPU QPI connection degraded. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.12
+hwCPUVRDOverTempMajor	CPU VRD overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.39
+hwCPUVRDOverTempMajorDeassert	CPU VRD overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.40
+hwJCChipOverTempMinor	CPU JC overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.3
+hwJCChipOverTempMinorDeassert	CPU JC overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.4
+hwJCChipOverTempMajor	CPU JC overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.5
+hwJCChipOverTempMajorDeassert	CPU JC overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.6
+hwCPULowerDiffTempMajor	CPU temperature is about to reach the upper major threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.41
+hwCPULowerDiffTempMajorDeassert	CPU temperature is about to reach the upper major threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.42
+hwCPUBoardCPLDSelfTestFailure	CPU board CPLD self-test failed. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.5
+hwCPUBoardCPLDSelfTestFailureDeassert	CPU board CPLD self-test failed. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.6
+hwNCBoardCPLDSelfTestFailure	NCM CPLD self-test failed. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.13
+hwNCBoardCPLDSelfTestFailureDeassert	NCM CPLD self-test failed. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.14
+hwIOBoardCPLDSelfTestFailure	I/O board CPLD self-test failed. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.13
+hwIOBoardCPLDSelfTestFailureDeassert	I/O board CPLD self-test failed. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.14
+hwSCMEventMemoryBrdCFGErr	Memory board configuration error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.58.1
+hwSCMEventMemoryBrdCFGErrDeassert	Memory board configuration error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.58.2
+hwPSUCommunicationFailure	Communication with PSU failed. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.19
+hwPSUCommunicationFailureDeassert	Communication with PSU failed. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.20
+hwMemoryBoardLowerTemp	Memory board undertemperature. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.1
+hwMemoryBoardLowerTempDeassert	Memory board undertemperature. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.2
+hwSystemPSUCFGErr	Incorrect PSU configuration in SCE. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.73
+hwSystemPSUCFGErrDeassert	Incorrect PSU configuration in SCE.  (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.74
+hwPortNIPortDisconnected	NCM NI port disconnected. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.11
+hwPortNIPortDisconnectedDeassert	NCM NI port disconnected. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.12
+hwPICCardAccess12VFailure	Failed to read PIC card 12V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.37
+hwPICCardAccess12VFailureDeassert	Failed to read PIC card 12V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.38
+hwPCIeCardDIMMOverTemp	PCIe card DIMM overheating. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.9
+hwPCIeCardDIMMOverTempDeassert	PCIe card DIMM overheating. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.10
+hwPCIeCardOverTempMajor	PCIe card overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.11
+hwPCIeCardOverTempMajorDeassert	PCIe card overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.12
+hwPCIeCardCPUOverTempMinor	PCIe card CPU overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.13
+hwPCIeCardCPUOverTempMinorDeassert	PCIe card CPU overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.14
+hwPCIeCardCPUOverTempMajor	PCIe card CPU overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.15
+hwPCIeCardCPUOverTempMajorDeassert	PCIe card CPU overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.16
+hwPCIeCardBattLowerVoltMinor	PCIe card battery undervoltage minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.17
+hwPCIeCardBattLowerVoltMinorDeassert	PCIe card battery undervoltage minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.18
+hwPCIeCardLowerVoltMajor	PCIe card undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.19
+hwPCIeCardLowerVoltMajorDeassert	PCIe card undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.20
+hwPCIeCardOverVoltMajor	PCIe card overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.21
+hwPCIeCardOverVoltMajorDeassert	PCIe card overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.22
+hwPCIeCardAccessVoltFailure	Failed to read PCIe card voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.23
+hwPCIeCardAccessVoltFailureDeassert	Failed to read PCIe card voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.24
+hwPCIeCardBootEvent	PCIe card system startup status. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.25
+hwPCIeCardBootEventDeassert	PCIe card system startup status. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.26
+hwPCIeCardHardwareFailure	PCIe card hardware fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.27
+hwPCIeCardHardwareFailureDeassert	PCIe card hardware fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.28
+hwPCIeCardBootDiskAbsent	PCIe card boot disk not detected. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.29
+hwPCIeCardBootDiskAbsentDeassert	PCIe card boot disk not detected. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.30
+hwPCIeCardDIMMFailure	PCIe card memory fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.31
+hwPCIeCardDIMMFailureDeassert	PCIe card memory fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.32
+hwPCIeCardFWInitFailure	PCIe card firmware initialization failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.33
+hwPCIeCardFWInitFailureDeassert	PCIe card firmware initialization failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.34
+hwPCIeCardCPUInitFailure	PCIe card CPU initialization failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.35
+hwPCIeCardCPUInitFailureDeassert	PCIe card CPU initialization failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.36
+hwPCIeCardWatchDogTimeout	PCIe card watchdog timed out. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.37
+hwPCIeCardWatchDogTimeoutDeassert	PCIe card watchdog timed out. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.38
+hwCPUMIMC0CH0MirrorFailure	Memory mirroring failed in channel 0, iMC 0 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.43
+hwCPUMIMC0CH0MirrorFailureDeassert	Memory mirroring failed in channel 0, iMC 0 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.44
+hwCPUMIMC0CH1MirrorFailure	Memory mirroring failed in channel 1, iMC 0 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.45
+hwCPUMIMC0CH1MirrorFailureDeassert	Memory mirroring failed in channel 1, iMC 0 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.46
+hwCPUMIMC0CH2MirrorFailure	Memory mirroring failed in channel 2, iMC 0 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.47
+hwCPUMIMC0CH2MirrorFailureDeassert	Memory mirroring failed in channel 2, iMC 0 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.48
+hwCPUMIMC0CH3MirrorFailure	Memory mirroring failed in channel 3, iMC 0 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.49
+hwCPUMIMC0CH3MirrorFailureDeassert	Memory mirroring failed in channel 3, iMC 0 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.50
+hwCPUMIMC1CH0MirrorFailure	Memory mirroring failed in channel 0, iMC 1 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.51
+hwCPUMIMC1CH0MirrorFailureDeassert	Memory mirroring failed in channel 0, iMC 1 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.52
+hwCPUMIMC1CH1MirrorFailure	Memory mirroring failed in channel 1, iMC 1 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.53
+hwCPUMIMC1CH1MirrorFailureDeassert	Memory mirroring failed in channel 1, iMC 1 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.54
+hwCPUMIMC1CH2MirrorFailure	Memory mirroring failed in channel 2, iMC 1 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.55
+hwCPUMIMC1CH2MirrorFailureDeassert	Memory mirroring failed in channel 2, iMC 1 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.56
+hwCPUMIMC1CH3MirrorFailure	Memory mirroring failed in channel 3, iMC 1 of CPU. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.57
+hwCPUMIMC1CH3MirrorFailureDeassert	Memory mirroring failed in channel 3, iMC 1 of CPU. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.58
+hwIOBoard12VOverVoltage	I/O board 12V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.15
+hwIOBoard12VOverVoltageDeassert	I/O board 12V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.16
+hwNCBoard12VOverVoltage	NCM 12V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.15
+hwNCBoard12VOverVoltageDeassert	NCM 12V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.16
+hwRAIDBBULowerVoltage	RAID controller card BBU undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.15
+hwRAIDBBULowerVoltageDeassert	RAID controller card BBU undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.16
+hwRAIDBBUFault	RAID controller card BBU fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.17
+hwRAIDBBUFaultDeassert	RAID controller card BBU fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.18
+hwRAIDBBUNotPresent	RAID controller card BBU not detected.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.19
+hwPCIeCardBBULowerVoltage	PCIe card BBU undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.57
+hwPCIeCardBBULowerVoltageDeassert	PCIe card BBU undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.58
+hwPCIeCardBBUFault	PCIe card BBU fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.59
+hwPCIeCardBBUFaultDeassert	PCIe card BBU fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.60
+hwPCIeCardBBUNotPresent	PCIe card BBU not detected.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.61
+hwPCIeCardBBUPresent	PCIe card BBU detected.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.63
+hwRAIDBBUPresent	RAID controller card BBU detected.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.21
+hwCPUAccessDTSTempFailure	Failed to read CPU DTS temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.59
+hwCPUAccessDTSTempFailureDeassert	Failed to read CPU DTS temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.60
+hwIOBoardAccess12VFailure	Failed to read I/O board 12V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.19
+hwIOBoardAccess12VFailureDeassert	Failed to read I/O board 12V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.20
+hwNCBoardAccess12VFailure	Failed to read NCM 12V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.19
+hwNCBoardAccess12VFailureDeassert	Failed to read NCM 12V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.20
+hwJCChipAccessTempFailure	Failed to read CPU JC temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.7
+hwJCChipAccessTempFailureDeassert	Failed to read CPU JC temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.57.8
+hwDiskAccessTempFailure	Failed to read hard disk temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.23
+hwDiskAccessTempFailureDeassert	Failed to read hard disk temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.24
+hwMainboardStdby1V1LowerVoltage	Standby 1.1V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.139
+hwMainboardStdby1V1LowerVoltageDeassert	Standby 1.1V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.140
+hwMainboardStdby1V1OverVoltage	Standby 1.1V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.141
+hwMainboardStdby1V1OverVoltageDeassert	Standby 1.1V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.142
+hwMainboardStdby1V5LowerVoltage	Standby 1.5V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.143
+hwMainboardStdby1V5LowerVoltageDeassert	Standby 1.5V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.144
+hwMainboardStdby1V5OverVoltage	Standby 1.5V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.145
+hwMainboardStdby1V5OverVoltageDeassert	Standby 1.5V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.146
+hwMemoryVPP1AccessVoltageFailure	Failed to read DIMM VPP1 voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.35
+hwMemoryVPP1AccessVoltageFailureDeassert	Failed to read DIMM VPP1 voltage.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.36
+hwSwitchMezzAccessStdby1V8Failure	Failed to read mezzanine card 1.8V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.63
+hwSwitchMezzAccessStdby1V8FailureDeassert	Failed to read mezzanine card 1.8V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.64
+hwMainboardKeyboardControllerFault	PS/2 or USB keyboard controller fault. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.147
+hwMainboardKeyboardControllerFaultDeassert	PS/2 or USB keyboard controller fault. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.148
+hwMemoryBoardAccessTempFailure	Failed to read memory board temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.3
+hwMemoryBoardAccessTempFailureDeassert	Failed to read memory board temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.4
+hwPSUOutputOverVoltage	Output power overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.21
+hwPSUOutputOverVoltageDeassert	Output power overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.22
+hwPSUOutputLowerVoltage	Output power undervoltage or no output. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.23
+hwPSUOutputLowerVoltageDeassert	Output power undervoltage or no output. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.24
+hwPSUOutputOverCurrent	Output power overcurrent. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.25
+hwPSUOutputOverCurrentDeassert	Output power overcurrent. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.26
+hwPSUInputOverVoltage	Input power overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.27
+hwPSUInputOverVoltageDeassert	Input power overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.28
+hwPSUServerPowerFailure	Server power failure. 	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.4.31
+hwCPUVCCPOverVoltage	CPU VCCP overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.61
+hwCPUVCCPOverVoltageDeassert	CPU VCCP overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.62
+hwCPUVCCPLowerVoltage	CPU VCCP undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.63
+hwCPUVCCPLowerVoltageDeassert	CPU VCCP undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.64
+hwCPUAccessVCCPVoltFailure	Failed to read CPU VCCP voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.65
+hwCPUAccessVCCPVoltFailureDeassert	Failed to read CPU VCCP voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.66
+hwMemoryVPP2OverVoltage	Memory VPP2 overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.51
+hwMemoryVPP2OverVoltageDeassert	Memory VPP2 overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.52
+hwMemoryVPP2LowerVoltage	Memory VPP2 undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.53
+hwMemoryVPP2LowerVoltageDeassert	Memory VPP2 undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.54
+hwMemoryAccessVPP2VoltFailure	Failed to read the memory VPP2 voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.55
+hwMemoryAccessVPP2VoltFailureDeassert	Failed to read the memory VPP2 voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.56
+hwCPUVSAOverVoltage	CPU VSA overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.79
+hwCPUVSAOverVoltageDeassert	CPU VSA overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.80
+hwCPUVSALowerVoltage	CPU VSA undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.81
+hwCPUVSALowerVoltageDeassert	CPU VSA undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.82
+hwCPUAccessVSAVoltFailure	Failed to read CPU VSA voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.83
+hwCPUAccessVSAVoltFailureDeassert	Failed to read CPU VSA voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.84
+hwCPUVCCIOOverVoltage	CPU VCCIO overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.85
+hwCPUVCCIOOverVoltageDeassert	CPU VCCIO overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.86
+hwCPUVCCIOLowerVoltage	CPU VCCIO undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.87
+hwCPUVCCIOLowerVoltageDeassert	CPU VCCIO undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.88
+hwCPUAccessVCCIOVoltFailure	Failed to read CPU VCCIO voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.89
+hwCPUAccessVCCIOVoltFailureDeassert	Failed to read CPU VCCIO voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.90
+hwCPUVMCPOverVoltage	CPU VMCP overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.91
+hwCPUVMCPOverVoltageDeassert	CPU VMCP overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.92
+hwCPUVMCPLowerVoltage	CPU VMCP undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.93
+hwCPUVMCPLowerVoltageDeassert	CPU VMCP undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.94
+hwCPUAccessVMCPVoltFailure	Failed to read CPU VMCP voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.95
+hwCPUAccessVMCPVoltFailureDeassert	Failed to read CPU VMCP voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.96
+hwPCHVpvnnOverVoltage	PCH VPVNN overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.15
+hwPCHVpvnnOverVoltageDeassert	PCH VPVNN overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.16
+hwPCHVpvnnLowerVoltage	PCH VPVNN undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.17
+hwPCHVpvnnLowerVoltageDeassert	PCH VPVNN undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.18
+hwPCHAccessVpvnnVoltageFailure	Failed to read PCH VPVNN voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.19
+hwPCHAccessVpvnnVoltageFailureDeassert	Failed to read PCH VPVNN voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.20
+hwPCHPRIMVoltOverVoltage	PCH PRIM 1.05V overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.21
+hwPCHPRIMVoltOverVoltageDeassert	PCH PRIM 1.05V overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.22
+hwPCHPRIMVoltLowerVoltage	PCH PRIM 1.05V undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.23
+hwPCHPRIMVoltLowerVoltageDeassert	PCH PRIM 1.05V undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.24
+hwPCHPRIMAccessVoltageFailure	Failed to read PCH PRIM 1.05V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.25
+hwPCHPRIMAccessVoltageFailureDeassert	Failed to read PCH PRIM 1.05V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.26
+hwBMCCertOverDue	Certificate expiration check. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.35
+hwBMCCertOverDueDeassert	Certificate expiration check. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.36
+hwBMCLostBmaHeartBeat	iBMC-BMA heartbeat lost. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.37
+hwBMCLostBmaHeartBeatDeassert	iBMC-BMA heartbeat lost. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.38
+hwMemoryConfigError	Incorrect memory configuration. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.37
+hwMemoryConfigErrorDeassert	Incorrect memory configuration. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.38
+hwMemoryInitializationError	Memory initialization error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.39
+hwMemoryInitializationErrorDeassert	Memory initialization error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.40
+hwCPUMemoryConfigError	DIMM configuration error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.75
+hwCPUMemoryConfigErrorDeassert	DIMM configuration error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.76
+hwCPUMRCFatalError	System critical error detected in memory initialization check. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.77
+hwCPUMRCFatalErrorDeassert	System critical error detected in memory initialization check. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.78
+hwNoAvailableMemoryError	No available memory. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.79
+hwNoAvailableMemoryErrorDeassert	No available memory.(Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.80
+hwSDRAIDCardFault	SD card RAID controller fault. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.59.1
+hwSDRAIDCardFaultDeassert	SD card RAID controller fault. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.59.2
+hwMemoryBoardSMI2TainingError	Initialization error on SMI2 link of memory board. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.5
+hwMemoryBoardSMI2TainingErrorDeassert	Initialization error on SMI2 link of memory board. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.15.6
+hwMainboardSMI2TainingError	Initialization error on SMI2 link of mainboard. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.155
+hwMainboardSMI2TainingErrorDeassert	Initialization error on SMI2 link of mainboard. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.156
+hwMainboardMOS2OverVoltageMajor	Large MOS2 voltage difference on mainboard (major alarm). (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.157
+hwMainboardMOS2OverVoltageMajorDeassert	Large MOS2 voltage difference on mainboard (major alarm). (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.158
+hwCPUAccessVRDTempFailure	Failed to read CPU VRD temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.97
+hwCPUAccessVRDTempFailureDeassert	Failed to read CPU VRD temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.98
+hwMainboardStdby1V8LowerVoltage	Standby 1.8V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.161
+hwMainboardStdby1V8LowerVoltageDeassert	Standby 1.8V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.162
+hwMainboardStdby1V8OverVoltage	Standby 1.8V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.163
+hwMainboardStdby1V8OverVoltageDeassert	Standby 1.8V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.164
+hwMainboardAccessStdby1V8Failure	Failed to read standby 1.8V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.165
+hwMainboardAccessStdby1V8FailureDeassert	Failed to read standby 1.8V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.166
+hwSystemDiskPartitionOverLoad	High disk partition usage. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.83
+hwSystemDiskPartitionOverLoadDeassert	High disk partition usage. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.84
+hwIOBoard12VLowerVoltage	I/O board 12V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.17
+hwIOBoard12VLowerVoltageDeassert	I/O board 12V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.18
+hwMemoryCEHardFailure	Memory CE hard failure. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.45
+hwMemoryCEHardFailureDeassert	Memory CE hard failure. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.46
+hwConnBoardNotProInstalled	Connection board not securely installed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.1
+hwConnBoardNotProInstalledDeassert	Connection board not securely installed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.2
+hwConnBoardAbsent	Connection board not detected. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.3
+hwConnBoardAbsentDeassert	Connection board not detected. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.4
+hwConnBoardFailure	Connection board fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.5
+hwConnBoardFailureDeassert	Connection board fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.64.6
+hwCPUAccessCoreVoltFailure	Failed to read CPU Core voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.99
+hwCPUAccessCoreVoltFailureDeassert	Failed to read CPU Core voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.100
+hwPCIeSwitchCoreVoltLowerVoltage	PCIe switch core-volt undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.1
+hwPCIeSwitchCoreVoltLowerVoltageDeassert	PCIe switch core-volt undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.2
+hwPCIeSwitchCoreVoltOverVoltage	PCIe switch core-volt overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.3
+hwPCIeSwitchCoreVoltOverVoltageDeassert	PCIe switch core-volt overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.4
+hwPCIeSwitchCoreVoltFailure	Failed to read PCIe switch core voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.5
+hwPCIeSwitchCoreVoltFailureDeassert	Failed to read PCIe switch core voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.6
+hwPCIeSwitchVDDVoltLowerVoltage	PCIe switch VDD undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.7
+hwPCIeSwitchVDDVoltLowerVoltageDeassert	PCIe switch VDD undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.8
+hwPCIeSwitchVDDVoltOverVoltage	PCIe switch VDD overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.9
+hwPCIeSwitchVDDVoltOverVoltageDeassert	PCIe switch VDD overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.10
+hwPCIeSwitchVDDVoltFailure	Failed to read PCIe switch VDD voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.11
+hwPCIeSwitchVDDVoltFailureDeassert	Failed to read PCIe switch VDD voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.12
+hwPCIeSwitchInputVoltLowerVoltage	PCIe switch input-volt undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.13
+hwPCIeSwitchInputVoltLowerVoltageDeassert	PCIe switch input-volt undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.14
+hwPCIeSwitchInputVoltOverVoltage	PCIe switch input-volt overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.15
+hwPCIeSwitchInputVoltOverVoltageDeassert	PCIe switch input-volt overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.16
+hwPCIeSwitchInputVoltFailure	Failed to read PCIe switch input voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.17
+hwPCIeSwitchInputVoltFailureDeassert	Failed to read PCIe switch input voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.18
+hwPCHIOVoltLowerVoltage	PCH IO undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.27
+hwPCHIOVoltLowerVoltageDeassert	PCH IO undervoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.28
+hwPCHIOVoltOverVoltage	PCH IO overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.29
+hwPCHIOVoltOverVoltageDeassert	PCH IO overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.30
+hwPCHIOAccessVoltageFailure	Failed to read PCH IO voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.31
+hwPCHIOAccessVoltageFailureDeassert	Failed to read PCH IO voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.32
+hwPCIeSwitchOverTempMinor	PCIe switch overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.19
+hwPCIeSwitchOverTempMinorDeassert	PCIe switch overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.20
+hwPCIeSwitchOverTempMajor	PCIe switch overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.21
+hwPCIeSwitchOverTempMajorDeassert	PCIe switch overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.22
+hwPCIeSwitchAccessTempFailure	Failed to read PCIe switch temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.23
+hwPCIeSwitchAccessTempFailureDeassert	Failed to read PCIe switch temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.24
+hwPCIeCardPwrFailure	PCIe card power fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.65
+hwPCIeCardPwrFailureDeassert	PCIe card power fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.66
+hwDiskBackplaneLowerVoltMajor	Hard disk backplane undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.5
+hwDiskBackplaneLowerVoltMajorDeassert	Hard disk backplane undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.6
+hwDiskBackplaneOverVoltMajor	Hard disk backplane overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.7
+hwDiskBackplaneOverVoltMajorDeassert	Hard disk backplane overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.8
+hwDiskBackplaneAccessVoltFailure	Failed to read hard disk backplane voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.9
+hwDiskBackplaneAccessVoltFailureDeassert	Failed to read hard disk backplane voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.10
+hwPCIeCardFPGALoadFailure	PCIe card FPGA load failure. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.67
+hwPCIeCardFPGALoadFailureDeassert	PCIe card FPGA load failure. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.68
+hwPCIeCardEEPROMFault	PCIe card EEPROM fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.69
+hwPCIeCardEEPROMFaultDeassert	PCIe card EEPROM fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.70
+hwCablePSBackplaneDisconnection	Improper PS back plane cable connection. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.13
+hwCablePSBackplaneDisconnectionDeassert	Improper PS back plane cable connection. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.14
+hwCableFanBackplaneDisconnection	Improper fan back plane cable connection. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.15
+hwCableFanBackplaneDisconnectionDeassert	Improper fan back plane cable connection. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.16
+hwCableAggregationPortDisconnection	Improper aggregation port cable connection. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.17
+hwCableAggregationPortDisconnectionDeassert	Improper aggregation port cable connection. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.18
+hwBMCNodeBMCHeartBeatFault	iBMC-Node heartbeat abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.39
+hwBMCNodeBMCHeartBeatFaultDeassert	iBMC-Node heartbeat abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.40
+hwSystemMemoryInitializationError	System error with memory initialization. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.87
+hwSystemMemoryInitializationErrorDeassert	System error with memory initialization. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.88
+hwMemoryMRCFatalError	Memory MRC fatal error. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.47
+hwMemoryMRCFatalErrorDeassert	Memory MRC fatal error. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.48
+hwMainboardAccessVoltFailure	Failed to obtain the voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.167
+hwMainboardAccessVoltFailureDeassert	Failed to obtain the voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.168
+hwCPUVoltLow	CPU undervoltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.101
+hwCPUVoltLowDeassert	CPU undervoltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.102
+hwCPUVoltHigh	CPU overvoltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.103
+hwCPUVoltHighDeassert	CPU overvoltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.104
+hwPCHPvnnLowerVoltage	PCH pvnn undervoltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.33
+hwPCHPvnnLowerVoltageDeassert	PCH pvnn undervoltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.34
+hwPCHPvnnOverVoltage	PCH pvnn overvoltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.35
+hwPCHPvnnOverVoltageDeassert	PCH pvnn overvoltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.36
+hwCPUBoardClockSignalLost	CPU Board clock signals lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.7
+hwCPUBoardClockSignalLostDeassert	CPU Board clock signals lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.8
+hwIOBoardClockSignalLost	I/O board clock signals lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.21
+hwIOBoardClockSignalLostDeassert	I/O board clock signals lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.22
+hwMainboardClockSignalLost	Mainboard clock signals lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.169
+hwMainboardClockSignalLostDeassert	Mainboard clock signals lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.170
+hwMainboardRemoteBMCBoard	MasteriBMC not present.  (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.171
+hwMainboardRemoteBMCBoardDeassert	Master iBMC not present.  (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.172
+hwTPMSelfTestFailed	TPM self-test failed .(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.35.1
+hwTPMSelfTestFailedDeassert	TPM self-test failed .(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.35.2
+hwMainboardSPIStatusError	SPI Flash switching status error.  (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.173
+hwMainboardSPIStatusErrorDeassert	SPI Flash switching status error.  (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.174
+hwMainboardPowerLackAlertAbnormal	Alert signal check failed.  (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.175
+hwMainboardPowerLackAlertAbnormalDeassert	Alert signal check failed.  (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.176
+hwSystemMainboardDiskBPMismatch	Mainboard does not match hard disk backplane.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.91
+hwSystemMainboardDiskBPMismatchDeassert	Mainboard does not match hard disk backplane. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.92
+hwBasePlaneLSWLowerVoltMajor	Base plane switch voltage below lower major threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.25
+hwBasePlaneLSWLowerVoltMajorDeassert	Base plane switch voltage below lower major threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.26
+hwBasePlaneLSWOverVoltMajor	Base plane switch overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.27
+hwBasePlaneLSWOverVoltMajorDeassert	Base plane switch overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.28
+hwBasePlaneLSWAccessVoltFailure	Failed to read Base plane switch voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.29
+hwBasePlaneLSWAccessVoltFailureDeassert	Failed to read Base plane switch voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.30
+hwBasePlaneCPULowerVoltMajor	Base plane CPU voltage below lower major threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.31
+hwBasePlaneCPULowerVoltMajorDeassert	Base plane CPU voltage below lower major threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.32
+hwBasePlaneCPUOverVoltMajor	Base plane CPU overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.33
+hwBasePlaneCPUOverVoltMajorDeassert	Base plane CPU overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.34
+hwBasePlaneCPUAccessVoltFailure	Failed to read Base plane CPU voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.35
+hwBasePlaneCPUAccessVoltFailureDeassert	Failed to read Base plane CPU voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.36
+hwPICCardLowerVoltage	Flexible NIC undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.39
+hwPICCardLowerVoltageDeassert	Flexible NIC undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.40
+hwPICCardOverVoltage	Flexible NIC overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.41
+hwPICCardOverVoltageDeassert	Flexible NIC overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.42
+hwPICCardAccess12VFailure	Failed to read PIC card voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.43
+hwPICCardAccess12VFailureDeassert	Failed to read PIC cardvoltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.44
+hwFabricPlaneSWLowerVoltMajor	Fabric plane switch voltage below lower major threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.47
+hwFabricPlaneSWLowerVoltMajorDeassert	Fabric plane switch voltage below lower major threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.48
+hwFabricPlaneSWOverVoltMajor	Fabric plane switch overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.49
+hwFabricPlaneSWOverVoltMajorDeassert	Fabric plane switch overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.50
+hwFabricPlaneSWAccessVoltFailure	Failed to read Fabric plane switch voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.51
+hwFabricPlaneSWAccessVoltFailureDeassert	Failed to read Fabric plane switch voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.52
+hwFabricPlaneSWOverTempMinor	Fabric plane switch overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.53
+hwFabricPlaneSWOverTempMinorDeassert	Fabric plane switch overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.54
+hwFabricPlaneSWOverTempMajor	Fabric plane switch overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.55
+hwFabricPlaneSWOverTempMajorDeassert	Fabric plane switch overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.56
+hwFabricPlaneSWFault	Fabric plane switch fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.57
+hwFabricPlaneSWFaultDeassert	Fabric plane switch fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.58
+hwPICCardClockSignalLost	PIC card clock signals lost. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.45
+hwPICCardClockSignalLostDeassert	PIC card clock signals lost. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.49.46
+hwPCHOverTempMajor	PCH overtemperature major alarm.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.37
+hwPCHOverTempMajorDeassert	PCH overtemperature major alarm.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.38
+hwRAIDCardOverTempMajor	RAID controller card overheating major alarm. (Generated).	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.23
+hwRAIDCardOverTempMajorDeassert	RAID controller card overheating major alarm. (Cleared).	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.24
+hwCPUVDDQOverTempMajor	CPU VDDQ overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.105
+hwCPUVDDQOverTempMajorDeassert	CPU VDDQ overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.106
+hwMainboardLOMUncorrectableErr	LOM MCE/AER error.  (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.177
+hwMainboardLOMUncorrectableErrDeassert	LOM MCE/AER error.  (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.178
+hwSwitchModuleOverVoltage	Switch module overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.1
+hwSwitchModuleOverVoltageDeassert	Switch module overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.2
+hwSwitchModuleLowerVoltage	Switch module voltage below lower major threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.3
+hwSwitchModuleLowerVoltageDeassert	Switch module voltage below lower major threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.4
+hwSwitchModuleAccessVoltageFailure	Failed to read Switch module voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.5
+hwSwitchModuleAccessVoltageFailureDeassert	Failed to read Switch module voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.6
+hwIOBoardStdby3V3OverVoltage	I/O board standby 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.23
+hwIOBoardStdby3V3OverVoltageDeassert	I/O board standby 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.24
+hwIOBoardStdby3V3LowerVoltage	I/O board standby 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.25
+hwIOBoardStdby3V3LowerVoltageDeassert	I/O board standby 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.26
+hwIOBoardAccessStdby3V3Failure	Failed to read I/O board standby 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.27
+hwIOBoardAccessStdby3V3FailureDeassert	Failed to read I/O board standby 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.28
+hwIOBoardClockPower	Power supplies to clock chips on the IO board abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.29
+hwIOBoardClockPowerDeassert	Power supplies to clock chips on the IO board abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.30
+hwIOBoardClock	IO board clock chips abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.31
+hwIOBoardClockDeassert	IO board clock chips abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.32
+hwIOBoardPower	IO board power signal abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.33
+hwIOBoardPowerDeassert	IO board power signal abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.34
+hwPCIeSwitchFileFail	Failed to obtain PCIe Switch update file. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.25
+hwPCIeSwitchFileFailDeassert	Failed to obtain PCIe Switch update file. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.26
+hwPCIeSwitchUpdateFail	Failed to update PCIe Switch eeprom. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.27
+hwPCIeSwitchUpdateFailDeassert	Failed to update PCIe Switch eeprom. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.28
+hwSwitchModuleClockPower	Power supplies to clock chips on the Switch module abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.7
+hwSwitchModuleClockPowerDeassert	Power supplies to clock chips on the Switch module abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.8
+hwSwitchModuleClock	Switch module clock chips abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.9
+hwSwitchModuleClockDeassert	Switch module clock chips abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.10
+hwSwitchModulePower	Switch module power signal abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.11
+hwSwitchModulePowerDeassert	Switch module power signal abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.21.12
+hwMainboardSYSLowerVoltage	Mainboard voltage undervoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.179
+hwMainboardSYSLowerVoltageDeassert	Mainboard voltage undervoltage.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.180
+hwMainboardSYSOverVoltage	Mainboard voltage overvoltage. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.181
+hwMainboardSYSOverVoltageDeassert	Mainboard voltage overvoltage. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.182
+hwPCIeCardInstalled	PCIe card installed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.71
+hwPCIeCardRemoved	PCIe card removed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.73
+hwNCBoardConfigCDRFailure	Failed to configure CDR of NC board. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.65
+hwNCBoardConfigCDRFailureDeassert	Failed to configure CDR of NC board. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.66
+hwPCIeSwitchUncorrectableError	Uncorrectable PCIe Switch error. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.29
+hwPCIeSwitchUncorrectableErrorDeassert	Uncorrectable PCIe Switch error. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.63.30
+hwIOBoardVCC3V3OverVoltage	I/O board VCC 3.3V overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.35
+hwIOBoardVCC3V3OverVoltageDeassert	I/O board VCC 3.3V overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.36
+hwIOBoardVCC3V3LowerVoltage	I/O board VCC 3.3V undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.37
+hwIOBoardVCC3V3LowerVoltageDeassert	I/O board VCC 3.3V undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.38
+hwIOBoardAccessVCC3V3Failure	Failed to read I/O board VCC 3.3V voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.39
+hwIOBoardAccessVCC3V3FailureDeassert	Failed to read I/O board VCC 3.3V voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.40
+hwSystemAccessPowerFailure	Failed to read the total system power.  (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.93
+hwSystemAccessPowerFailureDeassert	Failed to read the total system power.  (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.94
+hwCPUMarginFailure	Failed to read CPU margin. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.107
+hwCPUMarginFailureDeassert	Failed to read CPU margin. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.108
+hwChassisAccessOutletTempFailure	Failed to read the air outlet temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.23
+hwChassisAccessOutletTempFailureDeassert	Failed to read the air outlet temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.24
+hwMemoryOverTempMinor	Memory overtemperature minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.59
+hwMemoryOverTempMinorDeassert	Memory overtemperature minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.60
+hwMemoryOverTempMajor	Memory overtemperature major alarm.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.61
+hwMemoryOverTempMajorDeassert	Memory overtemperature major alarm.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.62
+hwMemoryAccessTempFailure	Failed to read memory temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.63
+hwMemoryAccessTempFailureDeassert	Failed to read memory temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.2.64
+hwMainboardSoftStartLowerVoltage	Soft-start circuit undervoltage major alarm.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.183
+hwMainboardSoftStartLowerVoltageDeassert	Soft-start circuit undervoltage major alarm.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.184
+hwFabricPlaneSWEEPROMFault	Fabric plane switch EEPROM fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.59
+hwFabricPlaneSWEEPROMFaultDeassert	Fabric plane switch EEPROM fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.60
+hwFabricPlaneSWClock	Fabric plane switch clock abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.61
+hwFabricPlaneSWClockDeassert	Fabric plane switch clock abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.62
+hwMezzCardAccessFRULableFailure	Failed to read mezzanine card electronic label. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.9
+hwMezzCardAccessFRULableFailureDeassert	Failed to read mezzanine card electronic label. (Cleared). (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.10
+hwBMCTimeHopping	BMC time hopping	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.41
+hwBMCNTPSynchronizeFailed	Failed to synchronize time with the NTP server (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.43
+hwBMCNTPSynchronizeFailedDeassert	Failed to synchronize time with the NTP server (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.44
+hwSystemProductIndentityFailure	Failed to identify the product.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.95
+hwSystemProductIndentityFailureDeassert	Failed to identify the product.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.96
+hwMainboardWOLSignalError	The WOL signal triggered by the mezzanine card is abnormal.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.185
+hwMainboardWOLSignalErrorDeassert	The WOL signal triggered by the mezzanine card is abnormal.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.186
+hwMainboardRAIDLowerVoltage	Mainboard RAID chip voltage at  detection point is lower than the undervoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.187
+hwMainboardRAIDLowerVoltageDeassert	Mainboard RAID chip voltage at  detection point is lower than the undervoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.188
+hwMainboardRAIDOverVoltage	Mainboard RAID chip voltage at  detection point is exceeds the overvoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.189
+hwMainboardRAIDOverVoltageDeassert	Mainboard RAID chip voltage at  detection point is exceeds the overvoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.190
+hwMainboardRAIDAccessVoltageFailure	Failed to obtain the voltage at  detection point on the Mainboard RAID chip. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.191
+hwMainboardRAIDAccessVoltageFailureDeassert	Failed to obtain the voltage at  detection point on the Mainboard RAID chip. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.192
+hwPCHStdbyLowerVoltage	PCH standby undervoltage.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.45
+hwPCHStdbyLowerVoltageDeassert	PCH standby undervoltage.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.46
+hwPCHStdbyOverVoltage	PCH standby overvoltage.  (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.47
+hwPCHStdbyOverVoltageDeassert	PCH standby overvoltage.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.48
+hwPCHAccessStdbyFailure	Failed to read PCH standby voltage.  (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.49
+hwPCHAccessStdbyFailureDeassert	Failed to read PCH standby voltage.  (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.50
+hwEIUABoardlowerVoltage	EIUA board voltage below lower major threshold .(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.1
+hwEIUABoardlowerVoltageDeassert	EIUA board voltage below lower major threshold .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.2
+hwEIUABoardOverVoltage	EIUA board overvoltage major alarm .(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.3
+hwEIUABoardOverVoltageDeassert	EIUA board overvoltage major alarm .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.4
+hwEIUABoardAccessVoltageFailure	Failed to read EIUA board voltage .(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.5
+hwEIUABoardAccessVoltageFailureDeassert	Failed to read EIUA board voltage.( Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.67.6
+hwGPUCarrierBoardlowerVoltage	GPU carrier board voltage below lower major threshold .(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.1
+hwGPUCarrierBoardlowerVoltageDeassert	GPU carrier board voltage below lower major threshold .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.2
+hwGPUCarrierBoardOverVoltage	GPU carrier board overvoltage major alarm .(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.3
+hwGPUCarrierBoardOverVoltageDeassert	GPU carrier board overvoltage major alarm .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.4
+hwGPUCarrierBoardAccessVoltageFailure	Failed to obtain the voltage of GPU carrier board.(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.5
+hwGPUCarrierBoardAccessVoltageFailureDeassert	Failed to obtain the power of GPU carrier board.( Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.6
+hwNCBoardAccess12VLowerVoltage	NCM 12V undervoltage major alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.17
+hwNCBoardAccess12VLowerVoltageDeassert	NCM 12V undervoltage major alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.20.18
+hwBasePlaneCPUOverTempMinor	Base plane CPU overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.37
+hwBasePlaneCPUOverTempMinorDeassert	Base plane CPU overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.38
+hwBasePlaneCPUOverTempMajor	Base plane CPU overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.39
+hwBasePlaneCPUOverTempMajorDeassert	Base plane CPU overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.40
+hwBasePlaneCPUAccessTempFailure	Failed to read Base plane CPU temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.41
+hwBasePlaneCPUAccessTempFailureDeassert	Failed to read Base plane CPU temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.42
+hwBasePlanePSFault	Base plane PS fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.43
+hwBasePlanePSFaultDeassert	Base plane PS fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.44
+hwMainboardStartUpOverTemp	System is forcibly shut down due to high temperature of the soft-start circuit. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.193
+hwMainboardStartUpOverTempDeassert	System is forcibly shut down due to high temperature of the soft-start circuit .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.194
+hwBasePlaneRestart	Fabric plane Restart. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.30.45
+hwFabricPlaneRestart	Fabric plane Restart. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.63
+hwSwitchMezzPSFault	Mezzanine card ps fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.65
+hwSwitchMezzPSFaultDeassert	Mezzanine card ps fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.32.66
+hwCPUCoreOverTempMinor	The CPU core temperature exceeds the overtemperature threshold. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.109
+hwCPUCoreOverTempMinorDeassert	The CPU core temperature exceeds the overtemperature threshold. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.110
+hwCPUNimbusLowerVoltage	CPU Nimbus voltage is lower than the undervoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.111
+hwCPUNimbusLowerVoltageDeassert	CPU Nimbus voltage is lower than the undervoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.112
+hwCPUNimbusOverVoltage	CPU Nimbus voltage exceeds the overvoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.113
+hwCPUNimbusOverVoltageDeassert	CPU Nimbus voltage exceeds the overvoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.114
+hwMainboardAccessRTCTimeFailure	Failed to obtain the RTC Time on the mainboard. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.195
+hwMainboardAccessRTCTimeFailureDeassert	Failed to obtain the RTC Time on the mainboard. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.196
+hwPCIeRAIDCardFault	PCIe  RAID card fault. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.75
+hwPCIeRAIDCardFaultDeassert	PCIe  RAID card fault. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.76
+hwDiskDrawerClose	Hard   disk drawer  closed.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.66.1
+hwDiskDrawerOpen	Hard   disk drawer opened.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.66.3
+hwSystemNetworkBandwidthUsageHigh	High bandwidth usage at NIC network port. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.97
+hwSystemNetworkBandwidthUsageHighDeassert	High bandwidth usage at NIC network port. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.98
+hwPortOpticalModuleVoltageAlarm	Optical module voltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.15
+hwPortOpticalModuleVoltageAlarmDeassert	Optical module voltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.16
+hwPortOpticalModulePowerAlarm	Optical module power major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.23
+hwPortOpticalModulePowerAlarmDeassert	Optical module power major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.24
+hwPortOpticalModuleSpeedMismatch	NIC and optical module speeds mismatch. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.39
+hwPortOpticalModuleSpeedMismatchDeassert	NIC and optical module speeds mismatch. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.40
+hwPortOAMLostLink	OAM Lost Link. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.41
+hwPortOAMLostLinkDeassert	OAM Lost Link. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.42
+hwPortOAMErrorPackage	OAM Error Package. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.43
+hwPortOAMErrorPackageDeassert	OAM Error Package. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.44
+hwIOBoardAccessBoardIDFailure	Failed to obtain data of the board id. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.41
+hwIOBoardAccessBoardIDFailureDeassert	Failed to obtain data of the board id .(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.42
+hwIOBoardInstalled	IO board installed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.43
+hwIOBoardRemoved	IO board removed. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.45
+hwREEACLostMajor	The entire REE enclosure is powered off. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.47
+hwREEACLostMajorDeassert	The entire REE enclosure is powered off. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.48
+hwFabricPlaneSWAccessSVIDFailure	Failed to obtain the switch chip SVID value for the Fabric plane. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.65
+hwFabricPlaneSWAccessSVIDFailureDeassert	Failed to obtain the switch chip SVID value for the Fabric plane. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.31.66
+hwIOBoardStartUpOverTemp	System is forcibly shut down due to high temperature of the soft-start circuit.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.49
+hwIOBoardStartUpOverTempDeassert	System is forcibly shut down due to high temperature of the soft-start circuit.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.50
+hwCPUBoardStartUpOverTemp	System is forcibly shut down due to high temperature of the soft-start circuit. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.9
+hwCPUBoardStartUpOverTempDeassert	System is forcibly shut down due to high temperature of the soft-start circuit. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.37.10
+hwPCIeCardPlugIn	The PCIe card  pluged in. 	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.77
+hwPCIeCardPlugOut	The PCIe card  pluged out. 	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.79
+hwPCIeRiserOverTempMinor	PCIe riser card  temperature  exceeds the overtemperature threshold.(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.5
+hwPCIeRiserOverTempMinorDeassert	PCIe riser card  temperature  exceeds the overtemperature threshold.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.6
+hwPCIeRiserAccessTempFailure	Failed to obtain data of the PCIe riser card  temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.7
+hwPCIeRiserAccessTempFailureDeassert	Failed to obtain data of the PCIe riser card  temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.8
+hwPCIeRiserlowerVoltage	PCIe riser  voltage at  detection point is lower than the undervoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.9
+hwPCIeRiserlowerVoltageDeassert	PCIe riser  voltage at  detection point is lower than the undervoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.10
+hwPCIeRiserOverVoltage	PCIe riser  voltage at  detection point exceeds the overvoltage threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.11
+hwPCIeRiserOverVoltageDeassert	PCIe riser  voltage at  detection point exceeds the overvoltage threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.12
+hwPCIeRiserAccessVoltageFailure	Failed to obtain the voltage at  detection point on the PCIe riser. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.13
+hwPCIeRiserAccessVoltageFailureDeassert	Failed to obtain the voltage at  detection point on the PCIe riser. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.14
+hwGPUCarrierBoardOverTempMinor	GPU carrier board  temperature at detection point exceeds the overtemperature threshold.(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.7
+hwGPUCarrierBoardOverTempMinorDeassert	GPU carrier board  temperature at detection point exceeds the overtemperature threshold.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.8
+hwGPUCarrierBoardAccessTempFailure	Failed to obtain the temperature at detection point on the GPU carrier board.(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.9
+hwGPUCarrierBoardAccessTempFailureDeassert	Failed to obtain the temperature at detection point on the GPU carrier board.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.10
+hwHMMAccessTempFailure	Failed to obtain data of  the HMM temperature. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.24.1
+hwHMMAccessTempFailureDeassert	Failed to obtain data of  the HMM temperature. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.24.2
+hwGPUCarrierBoardClockSignalLost	GPU carrier board clock signals lost.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.11
+hwGPUCarrierBoardClockSignalLostDeassert	GPU carrier board clock signals lost.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.12
+hwGPUCarrierBoardCPLDSelfTestFailure	GPU carrier board CPLD self-check error. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.13
+hwGPUCarrierBoardCPLDSelfTestFailureDeassert	GPU carrier board CPLD self-check error.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.14
+hwMainboardAccessRTCClockFailure	Failed to obtain the RTC clock on the mainboard. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.197
+hwMainboardAccessRTCClockFailureDeassert	Failed to obtain the RTC clock on the mainboard. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.198
+hwMainboardAccess10GEPHYClockFailure	Failed to obtain the 10GE_PHY clock on the mainboard. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.199
+hwMainboardAccess10GEPHYClockFailureDeassert	Failed to obtain the 10GE_PHY clock on the mainboard. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.200
+hwDiskOverTempMajor	Hard disk overheating major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.25
+hwDiskOverTempMajorDeassert	Hard disk overheating major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.26
+hwCPUAbsence	Failed to start the system. CPU 1 was not detected. 	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.115
+hwMezzCardOverVoltage	Mezzanine card overvoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.11
+hwMezzCardOverVoltageDeassert	Mezzanine card overvoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.12
+hwMezzCardLowerVoltage	Mezzanine card undervoltage major alarm. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.13
+hwMezzCardLowerVoltageDeassert	Mezzanine card  undervoltage major alarm. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.14
+hwMezzCardSVIDChipFailure	Mezzanine card failed to obtain WFR chip SVID. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.31
+hwMezzCardSVIDChipFailureDeassert	Mezzanine card failed to obtain WFR chip SVID. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.32
+hwMezzCardVoltageFailure	Failed to read mezzanine card voltage. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.33
+hwMezzCardVoltageFailureDeassert	Failed to read mezzanine card voltage. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.34
+hwPCIeRiserOverTempMajor	Pebpa backplane power supply over temperature.	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.15
+hwPCIeRiserOverTempMajorDeassert	Pebpa backplane power supply over temperature.	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.16
+hwFanBoardOverTemp	Fan backplane power supply over temperature.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.25.1
+hwFanBoardOverTempDeassert	Fan backplane   power supply over temperature.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.25.2
+hwFanBoardPowerFailure	Fan backplane power failure.(Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.25.3
+hwFanBoardPowerFailureDeassert	Fan backplane   power failure.(Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.25.4
+hwPWRBoardOverTemp	PSU backplane   power supply overtemperature.(Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.26.1
+hwPWRBoardOverTempDeassert	PSU backplane   power supply overtemperature.(Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.26.2
+hwChassisRightMountingEarNotPresent	Right mounting ear is not present. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.25
+hwChassisRightMountingEarNotPresentDeassert	Right mounting ear is not present. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.19.26
+hwCPUNVRHot	CPU has a vr hot error. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.117
+hwCPUNVRHotDeassert	CPU has a vr hot error. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.118
+hwCPUNVDDQVRHot	CPU has a vddq hot error. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.119
+hwCPUNVDDQVRHotDeassert	CPU has a vddq hot error. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.120
+hwDiskPwrFailMajor	The power signal of the disk is abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.27
+hwDiskPwrFailMajorDeassert	The power signal of the disk is abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.28
+hwIOBoardInletLOverTempMajor	Left of the I/O board air inlet overtemperature. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.51
+hwIOBoardInletLOverTempMajorDeassert	Left of the I/O board air inlet overtemperature.  (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.36.52
+hwPassThroughCardInstalled	The pass-through card installed. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.68.1
+hwPassThroughCardRemoved	The pass-through card removed. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.68.3
+hwPassThroughCardConfigureError	Failed to configure the pass-through card. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.68.5
+hwPassThroughCardConfigureErrorDeassert	Failed to configure the pass-through card. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.68.6
+hwPCIEClockLockLost	The clock is out of lock. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.81
+hwPCIEClockLockLostDeassert	The clock is out of lock. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.82
+hwPCIEDDRCalibrationFailure	The DDR calibration failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.83
+hwPCIEDDRCalibrationFailureDeassert	The DDR calibration failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.84
+hwPCIEDDRWorkAbnormal	The DDR on PCIe card is malfunctioning. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.85
+hwPCIEDDRWorkAbnormalDeassert	The DDR on PCIe card is malfunctioning. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.86
+hwPCIELinkAbnormal	The link on PCIe card is faulty. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.87
+hwPCIELinkAbnormalDeassert	The link on PCIe card is faulty. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.88
+hwPCIEBusinessAbnormal	Services on PCIe card are interrupted. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.89
+hwPCIEBusinessAbnormalDeassert	Services on PCIe card are interrupted. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.90
+hwPCIeRiserPowerFailure	PCIe riser card power failure.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.17
+hwPCIeRiserPowerFailureDeassert	PCIe riser card power failure.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.16.18
+hwLogicalDriveFault	Logical drive degraded or partially degraded or offline. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.69.1
+hwLogicalDriveFaultDeassert	Logical drive degraded or partially degraded or offline. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.69.2
+hwBMCStandbyMMHeartBeatFault	Abnormal heartbeat signal between the iBMC and standby management module. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.45
+hwBMCStandbyMMHeartBeatFaultDeassert	Abnormal heartbeat signal between the iBMC and standby management module. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.27.46
+hwGPUCarrierBoardAccessPowerFailure	Failed to obtain the power of GPU carrier board. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.15
+hwGPUCarrierBoardAccessPowerFailureDeassert	Failed to obtain the power of GPU carrier board.(Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.16
+hwPCIeCardAccessPowerFailure	Failed to obtain the power of PCIe card in slot.(Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.91
+hwPCIeCardAccessPowerFailureDeassert	Failed to obtain the power of PCIe card in slot. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.92
+hwGPUCarrierBoardPowerOnFailure	Failed to power on GPU carrier board.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.17
+hwGPUCarrierBoardPowerOnFailureDeassert	Failed to power on GPU carrier board.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.18
+hwPCIESelfTestFail	PCIe card self-test failed. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.93
+hwPCIESelfTestFailDeassert	PCIe card self-test failed. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.94
+hwPCIERecovError	Recoverable errors are detected on PCIe card. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.95
+hwPCIERecovErrorDeassert	Recoverable errors are detected on PCIe card. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.96
+hwPCIEUnRecovError	Unrecoverable errors detected on PCIe card. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.97
+hwPCIEUnRecovErrorDeassert	Unrecoverable errors detected on PCIe card. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.98
+hwDiskRemMediaWearoutLow	The disk remnant media wearout is lower than the threshold. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.29
+hwDiskRemMediaWearoutLowDeassert	The disk remnant media wearout is lower than the threshold. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.30
+hwSystemRestartByBMC	System restarted by the BMC.	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.45.99
+hwCableSLIMIncorrectConnection	SLIM cable connection is abnormal. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.19
+hwCableSLIMIncorrectConnectionDeassert	SLIM cable connection is abnormal. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.20
+hwMainboardAccessI2CDeviceFailure	I2C device access exception. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.201
+hwMainboardAccessI2CDeviceFailureDeassert	I2C device access exception. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.202
+hwPCIeRetimerUpdateFail	PCIe retimer upgrade failure. 	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.70.1
+hwMainboardSoftStartPGErr	Soft-start circuit power supply on the mainboard abnormal. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.203
+hwMainboardSoftStartPGErrDeassert	Soft-start circuit power supply on the mainboard abnormal. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.204
+hwDiskBackplanePowerFailure	Power supply to the disk backplane failed. (Generated)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.11
+hwDiskBackplanePowerFailureDeassert	Power supply to the disk backplane failed. (Cleared)	5	1.3.6.1.4.1.2011.2.235.1.1.500.11.6.12
+hwPCIeCardOMOverTemp	PCIe card optical module overheating minor alarm. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.99
+hwPCIeCardOMOverTempDeassert	PCIe card optical module overheating minor alarm. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.100
+hwCPUCEHardFailure	CPU health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.121
+hwCPUCEHardFailureDeassert	CPU health status degradation detected by PFAE.  (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.1.122
+hwPCIeCardCEHardFailure	PCIe card health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.101
+hwPCIeCardCEHardFailureDeassert	PCIe card health status degradation detected by PFAE.  (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.102
+hwCableQPILinkCEHardFailure	CPU QPI/UPI link health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.21
+hwCableQPILinkCEHardFailureDeassert	CPU QPI/UPI link health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.22
+hwDiskCEHardFailure	Hard disk health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.31
+hwDiskCEHardFailureDeassert	Hard disk health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.3.32
+hwRAIDCardCEHardFailure	RAID controller card health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.35
+hwRAIDCardCEHardFailureDeassert	RAID controller card health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.36
+hwMezzCardCEHardFailure	Mezzanine card health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.35
+hwMezzCardCEHardFailureDeassert	Mezzanine card health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.12.36
+hwNetworkCardCEHardFailure	NIC health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.7
+hwNetworkCardCEHardFailureDeassert	NIC health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.14.8
+hwMainboardLOMCEHardFailure	LOM health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.205
+hwMainboardLOMCEHardFailureDeassert	LOM health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.17.206
+hwPCHCEHardFailure	PCH health status degradation detected by PFAE. (Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.51
+hwPCHCEHardFailureDeassert	PCH health status degradation detected by PFAE. (Cleared)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.40.52
+hwGPUCarrierBoardInstalled	GPU carrier board installed.(Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.19
+hwGPUCarrierBoardRemoved	GPU carrier board removed.(Generated)	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.21
+hwHMMVersionLow	An earlier version of HMM is used. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.24.3
+hwHMMVersionLowDeassert	An earlier version of HMM is used. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.24.4
+hwSASPHYErrIncreasedTooFast	SAS PHY bit error increased too fast. 	2	1.3.6.1.4.1.2011.2.235.1.1.500.11.44.3
+hwPCIeRetimerConfigureFail	Failed to configure the Retimer. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.70.3
+hwPCIeRetimerConfigureFailDeassert	Failed to configure the Retimer. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.70.4
+hwPCIeRetimerLoadFileFail	PCIe retimer load failure. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.70.5
+hwPCIeRetimerLoadFileFailDeassert	PCIe retimer load failure. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.70.6
+hwRepeaterPCIeConfigureFail	Failed to configure the Repeater. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.71.1
+hwRepeaterPCIeConfigureFailDeassert	Failed to configure the Repeater. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.71.2
+hwCableSASRedriverConfigureFail	Failed to configure the SAS. (Generated)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.25
+hwCableSASRedriverConfigureFailDeassert	Failed to configure the SAS. (Cleared)	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.26
+hwPortConfigureFail	Failed to configure the PHY port.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.45
+hwPortConfigureFailDeassert	Failed to configure the PHY port.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.42.46
+hwCablePowerIncorrectConnection	Power cable is connected incorrectly. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.23
+hwCablePowerIncorrectConnectionDeassert	Power cable is connected incorrectly. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.24
+hwGPUCarrierBoardMOSOverTemp	GPU carrier board MOS FET overvoltage major alarm.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.23
+hwGPUCarrierBoardMOSOverTempDeassert	GPU carrier board MOS FET overvoltage major alarm.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.24
+hwGPUCarrierBoardSoftStartPGAbnormal	GPU carrier board MOS FET power abnormal.(Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.25
+hwGPUCarrierBoardSoftStartPGAbnormalDeassert	GPU carrier board MOS FET power abnormal.(Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.65.26
+hwPCIeCardGetInfoFailure	Failed to obtain information about PCIe card. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.103
+hwPCIeCardGetInfoFailureDeassert	Failed to obtain information about PCIe card. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.9.104
+hwCableSLIMNotPresent	SLIM cable is not connected. (Generated)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.27
+hwCableSLIMNotPresentDeassert	SLIM cable is not connected. (Cleared)	4	1.3.6.1.4.1.2011.2.235.1.1.500.11.41.28
+hwRAIDCardBBUOverTemp	RAID controller card BBU overheating minor alarm. (Generated).	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.25
+hwRAIDCardBBUOverTempDeassert	RAID controller card BBU overheating minor alarm. (Cleared).	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.26
+hwRAIDCardBBUAccessTempFailure	Failed to read RAID controller card BBU temperature. (Generated).	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.27
+hwRAIDCardBBUAccessTempFailureDeassert	Failed to read RAID controller card BBU temperature. (Cleared).	3	1.3.6.1.4.1.2011.2.235.1.1.500.11.7.28
+hwBMAForwardFailed	hwBMAForwardFailed	3	1.3.6.1.4.1.2011.2.235.1.500.11.74.1
+hwBMAForwardFailedDeassert	hwBMAForwardFailedDeassert	3	1.3.6.1.4.1.2011.2.235.1.500.11.74.2
