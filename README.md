@@ -8,7 +8,7 @@ I. General Information
 
     Name:     Zenoss Plugin for Huawei Server
     Category: Monitoring and Configuration
-    Version:  2.0.15
+    Version:  2.0.16
 
 
 II. Description
